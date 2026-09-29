@@ -43,6 +43,9 @@ Um link para página que ainda não existe fica vermelho e tracejado: [[Página 
 
 ## Segunda Seção
 
+<!-- Imagem: coloque o arquivo na pasta do reino e troque o nome abaixo. -->
+![[nome-da-imagem.jpg|Descrição da imagem]]
+
 ```timeline
 Ano 12 | Primeiro marco
 Ano 40 | Segundo marco, com [[Link Interno]]

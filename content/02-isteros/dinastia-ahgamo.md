@@ -38,6 +38,8 @@ Ano Atual | A Dinastia Ahgamo permanece no centro do poder de Isteros. Os Seis H
 
 ## Linhagem
 
+![[dinastia-ahgamo.jpg|Árvore genealógica da Dinastia Ahgamo, soberanos de Isteros]]
+
 A linhagem Ahgamo descende diretamente do fundador da dinastia, cuja ascensão estabeleceu uma nova ordem política em Isteros. Desde então, sucessivas gerações ampliaram o domínio da família, transformando uma casa real em uma verdadeira dinastia imperial.
 
 Com o crescimento do Império, porém, a própria família tornou-se progressivamente mais complexa. Casamentos políticos, ramos secundários e diferentes linhas de descendência produziram uma vasta rede de príncipes, princesas e nobres ligados ao sangue Ahgamo.

@@ -5,6 +5,7 @@ import rehypeSlug from 'rehype-slug'
 import type { Element } from 'hast'
 import remarkCallouts, { TIPOS_CALLOUT, type TipoCallout } from '../lib/remark-callouts'
 import { transformarWikilinks } from '../lib/wikilinks'
+import { resolverImagem } from '../lib/content'
 import MarkdownLink from './MarkdownLink'
 import Callout from './Callout'
 import Timeline from './Timeline'
@@ -20,7 +21,27 @@ function lerBlocoDeCodigo(pre: Element | undefined): { lang?: string; texto: str
   return { lang, texto }
 }
 
-const componentes: Components = {
+/**
+ * Imagem do documento. O `src` escrito no Markdown ("mapa.png") é resolvido
+ * para o arquivo real em content/; clicar abre a imagem em tamanho original.
+ */
+function Imagem({ pasta, src = '', alt = '' }: { pasta: string; src?: string; alt?: string }) {
+  const url = resolverImagem(pasta, src)
+  if (!url) {
+    return (
+      <span className="imagem-ausente" role="img" aria-label={`Imagem não encontrada: ${src}`}>
+        Imagem não encontrada: <code>{src}</code>
+      </span>
+    )
+  }
+  return (
+    <a href={url} target="_blank" rel="noopener" className="imagem" title="Abrir em tamanho original">
+      <img src={url} alt={alt} loading="lazy" decoding="async" />
+    </a>
+  )
+}
+
+const componentesBase: Components = {
   a: ({ href, children }) => <MarkdownLink href={href}>{children}</MarkdownLink>,
 
   // Blocos ```timeline``` e ```infobox``` viram componentes; o resto é código normal.
@@ -48,12 +69,22 @@ const componentes: Components = {
   ),
 }
 
+interface MarkdownProps {
+  fonte: string
+  /** Pasta do reino em content/, base para resolver imagens relativas. */
+  pasta: string
+}
+
 /**
  * Pipeline: [[wikilinks]] → links (texto) → remark (GFM + callouts) → rehype
  * (ids nos títulos, usados pelo sumário e por [[Doc#Seção]]) → React.
  */
-function Markdown({ fonte }: { fonte: string }) {
+function Markdown({ fonte, pasta }: MarkdownProps) {
   const processado = useMemo(() => transformarWikilinks(fonte), [fonte])
+  const componentes = useMemo<Components>(
+    () => ({ ...componentesBase, img: ({ src, alt }) => <Imagem pasta={pasta} src={src} alt={alt} /> }),
+    [pasta],
+  )
   return (
     <ReactMarkdown remarkPlugins={[remarkGfm, remarkCallouts]} rehypePlugins={[rehypeSlug]} components={componentes}>
       {processado}

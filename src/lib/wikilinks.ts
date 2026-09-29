@@ -22,6 +22,24 @@ const BLOCOS_COM_LINKS = new Set(['timeline', 'infobox'])
 
 const WIKILINK = /\[\[([^[\]|#\n]+)(?:#([^[\]|\n]+))?(?:\|([^[\]\n]+))?\]\]/g
 
+/** ![[imagem.png]] ou ![[imagem.png|legenda]]: imagem embutida, como no Obsidian. */
+const EMBED = /!\[\[([^[\]|\n]+)(?:\|([^[\]\n]+))?\]\]/g
+const EXTENSAO_IMAGEM = /\.(png|jpe?g|webp|gif|svg|avif)$/i
+
+/**
+ * Converte ![[imagem]] em imagem Markdown comum. Embeds de documentos (não
+ * suportados) viram um link normal, para o "!" não transformar o link em imagem.
+ */
+function transformarEmbeds(trecho: string): string {
+  return trecho.replace(EMBED, (_, alvo: string, legenda: string | undefined) => {
+    const arquivo = alvo.trim()
+    if (!EXTENSAO_IMAGEM.test(arquivo)) return legenda ? `[[${arquivo}|${legenda}]]` : `[[${arquivo}]]`
+    // Sem legenda, o texto alternativo é o nome do arquivo, sem extensão e hífens.
+    const alt = (legenda ?? arquivo.replace(EXTENSAO_IMAGEM, '').replace(/[-_]+/g, ' ')).trim()
+    return `![${alt}](<${arquivo}>)`
+  })
+}
+
 // Índice de busca por título normalizado (sem acentos/maiúsculas).
 // Também aceita o slug do arquivo e o nome do reino, para conveniência.
 const destinos = new Map<string, string>()
@@ -78,7 +96,7 @@ function mapearTextoForaDeCodigo(markdown: string, fn: (trecho: string) => strin
 /** Reescreve [[wikilinks]] como links Markdown já resolvidos. */
 export function transformarWikilinks(markdown: string): string {
   return mapearTextoForaDeCodigo(markdown, (trecho) =>
-    trecho.replace(WIKILINK, (_, alvo: string, secao: string | undefined, apelido: string | undefined) => {
+    transformarEmbeds(trecho).replace(WIKILINK, (_, alvo: string, secao: string | undefined, apelido: string | undefined) => {
       const texto = (apelido ?? (secao ? `${alvo} › ${secao}` : alvo)).trim()
       const { caminho } = resolverWikilink(alvo, secao)
       const destino = caminho ?? PREFIXO_AUSENTE + encodeURIComponent(alvo.trim())
@@ -91,7 +109,7 @@ export function transformarWikilinks(markdown: string): string {
 export function extrairAlvos(markdown: string): string[] {
   const alvos: string[] = []
   mapearTextoForaDeCodigo(markdown, (trecho) => {
-    for (const m of trecho.matchAll(WIKILINK)) alvos.push(m[1]!)
+    for (const m of transformarEmbeds(trecho).matchAll(WIKILINK)) alvos.push(m[1]!)
     return trecho
   })
   return alvos

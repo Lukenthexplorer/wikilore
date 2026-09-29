@@ -60,7 +60,7 @@ function Artigo({ doc }: { doc: Documento }) {
         {doc.avisos.length > 0 && <Avisos avisos={doc.avisos} arquivo={doc.arquivo} />}
 
         <div className="artigo__corpo prosa" ref={corpoRef}>
-          <Markdown fonte={doc.corpo} />
+          <Markdown fonte={doc.corpo} pasta={reino.pasta} />
         </div>
 
         <Backlinks caminho={doc.caminho} />

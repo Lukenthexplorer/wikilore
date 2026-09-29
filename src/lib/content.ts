@@ -89,6 +89,48 @@ const arquivos = import.meta.glob<string>('/content/**/*.md', {
   eager: true,
 })
 
+/**
+ * Imagens também vivem em content/, ao lado dos documentos. `?url` faz o Vite
+ * copiar cada uma para o build (com hash no nome, para cache) e devolver o
+ * endereço final, já com o BASE_PATH do GitHub Pages aplicado.
+ */
+const imagens = import.meta.glob<string>('/content/**/*.{png,jpg,jpeg,webp,gif,svg,avif}', {
+  query: '?url',
+  import: 'default',
+  eager: true,
+})
+
+// Índice por nome de arquivo, para ![[imagem.png]] funcionar de qualquer pasta (como no Obsidian).
+const imagemPorNome = new Map<string, string>()
+for (const [caminho, url] of Object.entries(imagens)) {
+  const nome = normalizar(caminho.slice(caminho.lastIndexOf('/') + 1))
+  if (!imagemPorNome.has(nome)) imagemPorNome.set(nome, url)
+}
+
+/**
+ * Resolve o `src` de uma imagem escrita num documento da pasta `pasta`.
+ * Ordem: URL externa → caminho relativo à pasta do documento → nome do arquivo
+ * em qualquer pasta. Devolve `undefined` se a imagem não existir.
+ */
+export function resolverImagem(pasta: string, src: string): string | undefined {
+  if (/^(https?:)?\/\//.test(src) || src.startsWith('data:')) return src
+  let relativo: string
+  try {
+    relativo = decodeURIComponent(src)
+  } catch {
+    relativo = src
+  }
+  relativo = relativo.replace(/^\.\//, '')
+  const partes = `/content/${pasta}/${relativo}`.split('/')
+  const resolvido: string[] = []
+  for (const p of partes) {
+    if (p === '..') resolvido.pop()
+    else if (p !== '.') resolvido.push(p)
+  }
+  const exato = imagens[resolvido.join('/')] ?? imagens[relativo.startsWith('/') ? relativo : `/${relativo}`]
+  return exato ?? imagemPorNome.get(normalizar(relativo.slice(relativo.lastIndexOf('/') + 1)))
+}
+
 // ---------------------------------------------------------------------------
 // Validação de campos: cada leitor devolve um valor seguro e anota avisos.
 // ---------------------------------------------------------------------------

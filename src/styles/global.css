@@ -1429,3 +1429,34 @@ kbd {
 .infobox__titulo {
   margin: 0;
 }
+
+/* ═══ Imagens ═════════════════════════════════════════════════════════ */
+
+/* Imagens ocupam a largura da coluna, como uma prancha colada no registro. */
+.prosa .imagem {
+  display: block;
+  margin: 1.5em 0;
+  max-width: var(--medida);
+}
+
+.prosa .imagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--borda);
+  box-shadow: var(--sombra);
+}
+
+.prosa .imagem:hover img {
+  border-color: var(--borda-forte);
+}
+
+.imagem-ausente {
+  display: block;
+  margin: 1.5em 0;
+  padding: var(--esp-3) var(--esp-4);
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--alerta);
+  border: 1px dashed currentColor;
+}

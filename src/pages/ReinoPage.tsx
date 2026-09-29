@@ -26,7 +26,7 @@ export default function ReinoPage() {
 
       {reino.introducao && (
         <div className="prosa">
-          <Markdown fonte={reino.introducao} />
+          <Markdown fonte={reino.introducao} pasta={reino.pasta} />
         </div>
       )}
 

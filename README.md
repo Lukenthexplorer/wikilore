@@ -111,6 +111,24 @@ Capital: [[Visão Geral da Capital]]
 
 Pares `Chave: Valor`. Flutua à direita no desktop e vai para o topo do documento no celular.
 
+### Imagens
+
+1. Coloque a imagem **na pasta do reino**, ao lado dos documentos
+   (ex.: `content/02-isteros/dinastia-ahgamo.jpg`). Prefira nomes sem espaços nem acentos.
+2. No documento, escreva:
+
+```markdown
+![[dinastia-ahgamo.jpg]]                              → imagem
+![[dinastia-ahgamo.jpg|Árvore genealógica dos Ahgamo]] → com descrição (recomendado)
+```
+
+A descrição é lida por leitores de tela e aparece se a imagem não carregar. Clicar na imagem
+abre em tamanho original. Se o nome estiver errado, aparece um aviso "Imagem não encontrada".
+A sintaxe comum do Markdown, `![descrição](dinastia-ahgamo.jpg)`, também funciona.
+
+Formatos: `png`, `jpg`, `webp`, `gif`, `svg`, `avif`. Imagens pesam no carregamento:
+para ilustrações e fotos, prefira `.jpg` ou `.webp` com até ~1 MB.
+
 ---
 
 ## Publicação
