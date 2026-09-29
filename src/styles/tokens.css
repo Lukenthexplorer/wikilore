@@ -1,0 +1,149 @@
+/*
+ * Tokens do tema "Arquivo Imperial".
+ *
+ * Este é o ÚNICO lugar com valores de cor, fonte e espaçamento. O resto do CSS
+ * usa só os nomes semânticos, então mudar a identidade visual (ou criar um novo
+ * modo) é questão de redefinir variáveis aqui.
+ */
+
+:root {
+  /* ── Paleta base ─────────────────────────────────────────────────────── */
+  --papel: #eee5d0;          /* fundo da área de leitura */
+  --papel-antigo: #e2d5b8;   /* fundo da sidebar: papel mais envelhecido */
+  --nanquim: #2b2622;        /* texto principal */
+  --grafite: #5a5249;        /* texto secundário, metadados */
+  --bronze: #8a6a3e;         /* filetes, ícones, capitular (uso decorativo) */
+  --bronze-claro: #b89a66;   /* hover, bordas sutis */
+  --selo: #7b2f25;           /* links quebrados, "secreto", rascunho */
+
+  /*
+   * Bronze para TEXTO. O --bronze puro fica em ~3,9:1 sobre o papel, abaixo do
+   * AA (4,5:1) para texto corrido; este tom mais escuro dá ~5,7:1 e mantém a
+   * mesma família cromática. Use-o em links e rótulos pequenos.
+   */
+  --bronze-texto: #6f5230;
+
+  /* ── Papéis semânticos (derivados da paleta) ─────────────────────────── */
+  --fundo: var(--papel);
+  --fundo-lateral: var(--papel-antigo);
+  --fundo-elevado: #f5efe0;  /* painéis sobre o papel: busca, infobox */
+  --texto: var(--nanquim);
+  --texto-suave: var(--grafite);
+  --link: var(--bronze-texto);
+  --link-hover: var(--nanquim);
+  --filete: var(--bronze);
+  --borda: color-mix(in srgb, var(--bronze-claro) 55%, transparent);
+  --borda-forte: var(--bronze-claro);
+  --alerta: var(--selo);
+  --sombra: 0 1px 2px rgb(43 38 34 / 0.08), 0 12px 32px -12px rgb(43 38 34 / 0.25);
+  --veu: rgb(43 38 34 / 0.45);
+
+  /* Callouts: tinta e fundo levemente tingido de cada tipo. */
+  --nota-tinta: var(--bronze-texto);
+  --nota-fundo: color-mix(in srgb, var(--bronze-claro) 14%, var(--papel));
+  --aviso-tinta: #6b4a12;
+  --aviso-fundo: color-mix(in srgb, #c9953a 16%, var(--papel));
+  --secreto-tinta: var(--selo);
+  --secreto-fundo: color-mix(in srgb, var(--selo) 8%, var(--papel));
+
+  /*
+   * Textura de papel: ruído fractal em SVG inline (sem imagens externas),
+   * com opacidade de 4%. Fica em uma variável para ser reaplicada em qualquer
+   * superfície "de papel".
+   */
+  --textura: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .17 0 0 0 0 .15 0 0 0 0 .13 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+
+  /* ── Tipografia ──────────────────────────────────────────────────────── */
+  --fonte-titulo: 'IM Fell English', 'IM Fell DW Pica', Georgia, serif;
+  --fonte-texto: 'EB Garamond', Garamond, 'Times New Roman', serif;
+
+  /* Escala modular de razão 1,25 (terça maior) a partir de 1rem. */
+  --escala--1: 0.8rem;
+  --escala-0: 1rem;
+  --escala-1: 1.25rem;
+  --escala-2: 1.563rem;
+  --escala-3: 1.953rem;
+  --escala-4: 2.441rem;
+  --escala-5: 3.052rem;
+
+  --texto-corpo: 1.1875rem;  /* 19px */
+  --entrelinha: 1.7;
+  /*
+   * Medida da coluna. Em EB Garamond um caractere médio ocupa ~0,44em, então
+   * 30em ≈ 68 caracteres por linha: o limite confortável de leitura.
+   */
+  --medida: 30em;
+
+  /* ── Espaçamento (múltiplos de 0,25rem) ──────────────────────────────── */
+  --esp-1: 0.25rem;
+  --esp-2: 0.5rem;
+  --esp-3: 0.75rem;
+  --esp-4: 1rem;
+  --esp-5: 1.5rem;
+  --esp-6: 2rem;
+  --esp-7: 3rem;
+  --esp-8: 4rem;
+
+  /* ── Layout ──────────────────────────────────────────────────────────── */
+  --largura-sidebar: 280px;
+  --largura-sumario: 220px;
+  --raio: 2px;               /* cantos quase retos, como papel cortado */
+  --duracao-troca: 220ms;
+
+  color-scheme: light;
+}
+
+/*
+ * Modo "à luz de vela". Aplica-se quando o leitor escolhe no botão
+ * (data-tema="vela") ou quando o sistema está escuro e não houve escolha.
+ * As duas regras precisam ficar iguais; só a primeira depende da mídia.
+ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema='papel']) {
+    --fundo: #221d18;
+    --fundo-lateral: #1a1612;
+    --fundo-elevado: #2b251f;
+    --texto: #e6d9bf;
+    --texto-suave: #b3a58c;
+    --bronze-texto: #c4a574;
+    --link: var(--bronze-texto);
+    --link-hover: #efe3ca;
+    --borda: color-mix(in srgb, var(--bronze) 45%, transparent);
+    --borda-forte: var(--bronze);
+    --alerta: #d98372;
+    --sombra: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 32px -12px rgb(0 0 0 / 0.6);
+    --veu: rgb(0 0 0 / 0.55);
+    --nota-tinta: var(--bronze-texto);
+    --nota-fundo: color-mix(in srgb, var(--bronze) 14%, #221d18);
+    --aviso-tinta: #deb468;
+    --aviso-fundo: color-mix(in srgb, #c9953a 12%, #221d18);
+    --secreto-tinta: #d98372;
+    --secreto-fundo: color-mix(in srgb, var(--selo) 22%, #221d18);
+    --textura: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .85 0 0 0 0 .75 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
+    color-scheme: dark;
+  }
+}
+
+:root[data-tema='vela'] {
+  --fundo: #221d18;
+  --fundo-lateral: #1a1612;
+  --fundo-elevado: #2b251f;
+  --texto: #e6d9bf;
+  --texto-suave: #b3a58c;
+  --bronze-texto: #c4a574;
+  --link: var(--bronze-texto);
+  --link-hover: #efe3ca;
+  --borda: color-mix(in srgb, var(--bronze) 45%, transparent);
+  --borda-forte: var(--bronze);
+  --alerta: #d98372;
+  --sombra: 0 1px 2px rgb(0 0 0 / 0.3), 0 12px 32px -12px rgb(0 0 0 / 0.6);
+  --veu: rgb(0 0 0 / 0.55);
+  --nota-tinta: var(--bronze-texto);
+  --nota-fundo: color-mix(in srgb, var(--bronze) 14%, #221d18);
+  --aviso-tinta: #deb468;
+  --aviso-fundo: color-mix(in srgb, #c9953a 12%, #221d18);
+  --secreto-tinta: #d98372;
+  --secreto-fundo: color-mix(in srgb, var(--selo) 22%, #221d18);
+  --textura: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .85 0 0 0 0 .75 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
+  color-scheme: dark;
+}
