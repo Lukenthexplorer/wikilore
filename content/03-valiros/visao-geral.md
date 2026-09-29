@@ -8,206 +8,56 @@ resumo: Panorama de Valiros e do Achnoclan.
 atualizado: 2026-09-22
 ---
 
-**Valiros** é um antigo reino marítimo do sul, conhecido por ter controlado durante séculos algumas das rotas comerciais mais importantes do continente. Sua riqueza nasceu do mar, de seus portos e de uma aristocracia mercante capaz de transformar navegação, comércio e guerra naval em instrumentos de poder.
+**Valiros** é o grande reino marítimo do sul e ainda permanece como a maior potência naval da Velha Era. Sua riqueza nasceu do comércio, dos estaleiros e do controle das rotas do **Oceano de Jó**.
 
-Durante seu auge, Valiros foi sinônimo de estabilidade, riqueza e domínio dos oceanos.
+Apesar de sua força, o reino atravessa um período de decadência. A aristocracia está fragmentada, antigas famílias disputam influência e o avanço tecnológico de Isteros ameaça um mundo construído ao redor do domínio dos mares.
 
-Hoje, porém, o reino vive um período de decadência.
-
-A ascensão de Isteros, o enfraquecimento de antigas rotas comerciais, a perda de influência política e sucessivas derrotas militares abalaram profundamente a estrutura que sustentava seu poder.
-
-No centro dessa transformação encontra-se **Achnoclan**, capital de Valiros e maior símbolo de tudo aquilo que o reino já foi.
-
-Uma cidade construída para celebrar o mar.
-
-E que agora observa o mundo aprender a viver sem ele.
+No centro do reino encontra-se **Achnoclan**, sua capital e maior símbolo da grandeza valiriana.
 
 ## Valiros
 
-Valiros ocupa grande parte das regiões meridionais do continente, incluindo extensas áreas costeiras, planícies férteis e diversos arquipélagos próximos ao litoral.
+Valiros ocupa extensas regiões costeiras do sul, além de ilhas e arquipélagos estrategicamente posicionados.
 
-Seu território sempre esteve voltado para o mar.
+Sua economia é sustentada por três pilares: **comércio, navegação e construção naval**.
 
-Portos, estaleiros e cidades costeiras concentram grande parte da população e da riqueza do reino, enquanto o interior permanece menos urbanizado e fortemente dependente da agricultura.
+Grandes famílias mercantes controlam frotas, estaleiros e companhias comerciais, possuindo influência suficiente para disputar poder com a própria Coroa.
 
-A economia valiriana se desenvolveu através de três pilares principais:
+Valiros continua poderoso, mas sua unidade está enfraquecendo.
 
-**comércio, navegação e construção naval.**
+O problema do reino não é a falta de navios.
 
-Durante gerações, navios de Valiros transportaram mercadorias entre diferentes regiões do continente. Seus comerciantes possuíam entrepostos em portos estrangeiros, enquanto companhias marítimas controlavam rotas utilizadas por milhares de embarcações.
-
-Essa prosperidade permitiu o surgimento de uma poderosa aristocracia mercante.
-
-Diferentemente de outros reinos, onde terras representavam a principal fonte de riqueza, muitas das grandes famílias de Valiros construíram suas fortunas através de frotas comerciais, estaleiros, empréstimos e contratos de navegação.
-
-O resultado foi uma sociedade profundamente ligada ao prestígio econômico.
-
-Uma família podia possuir um título antigo.
-
-Mas aquilo que realmente determinava sua influência era a quantidade de navios que controlava, os portos onde possuía interesses e as dívidas que outras casas mantinham com ela.
-
-A própria Coroa tornou-se dependente desse sistema.
-
-Guerras, construções públicas e expedições frequentemente eram financiadas por famílias privadas em troca de privilégios comerciais.
-
-Durante o auge de Valiros, essa relação fortaleceu o reino.
-
-Durante sua decadência, começou a fragmentá-lo.
-
-À medida que receitas diminuíram, famílias passaram a proteger seus próprios interesses antes daqueles da Coroa.
-
-Algumas reduziram investimentos na frota real.
-
-Outras passaram a manter navios armados próprios.
-
-E certas casas começaram a negociar discretamente com potências estrangeiras.
-
-Valiros continua sendo um reino unificado nos mapas.
-
-Politicamente, porém, tornou-se cada vez mais dividido.
+É decidir para onde eles devem navegar.
 
 ## O Achnoclan
 
-**Achnoclan** é a capital de Valiros e uma das cidades mais antigas do sul.
+**Achnoclan** é a capital de Valiros e uma das maiores cidades portuárias da Velha Era.
 
-Construída ao redor de uma enorme baía natural, a cidade cresceu durante séculos acompanhando a expansão marítima do reino.
+Erguida junto à **Baía dos Três Reis**, a cidade cresceu ao redor de seus portos, canais e estaleiros. Mastros, torres, palácios e fortalezas dominam sua paisagem.
 
-Seu horizonte é marcado por torres, palácios, mastros e antigas fortificações costeiras.
+O **Grande Porto de Achnoclan** continua recebendo embarcações vindas de todo o mundo conhecido, embora sinais da decadência sejam cada vez mais visíveis.
 
-Grande parte da cidade foi construída diretamente voltada para o mar.
+Palácios antigos perdem seu brilho, famílias tradicionais enfrentam dívidas e alguns distritos portuários sofrem com pobreza, contrabando e violência.
 
-As principais avenidas descem em direção aos portos, enquanto canais atravessam distritos comerciais e permitem que pequenas embarcações transportem cargas para dentro da própria cidade.
+Ainda assim, Achnoclan permanece viva.
 
-No centro encontra-se o **Grande Porto de Achnoclan**.
-
-Durante o auge de Valiros, centenas de embarcações podiam permanecer ancoradas ali simultaneamente.
-
-Navios mercantes chegavam diariamente carregando especiarias, tecidos, metais, madeira, grãos e produtos provenientes de diferentes partes do continente.
-
-Hoje, o porto permanece impressionante.
-
-Mas existem espaços vazios.
-
-Docas que anteriormente funcionavam dia e noite permanecem silenciosas por horas.
-
-Armazéns inteiros aguardam carregamentos que chegam com menos frequência.
-
-Alguns estaleiros foram abandonados.
-
-Outros sobrevivem produzindo embarcações menores ou realizando reparos para comerciantes estrangeiros.
-
-Essa transformação é visível em toda a cidade.
-
-Achnoclan possui palácios construídos durante períodos de enorme prosperidade.
-
-Muitos ainda pertencem às famílias que os ergueram.
-
-Poucas dessas famílias, entretanto, possuem atualmente a riqueza necessária para mantê-los.
-
-Fachadas de mármore começam a apresentar rachaduras.
-
-Jardins são reduzidos.
-
-Salões inteiros permanecem fechados.
-
-Ainda assim, bailes continuam acontecendo.
-
-Banquetes continuam sendo organizados.
-
-Brasões permanecem cuidadosamente expostos.
-
-Entre a aristocracia valiriana existe uma convicção quase silenciosa de que admitir decadência significaria acelerá-la.
-
-Por isso, Achnoclan conserva suas cerimônias mesmo quando a riqueza que originalmente as sustentava desaparece.
-
-A cidade, porém, não pertence apenas aos nobres.
-
-Milhares de marinheiros, pescadores, artesãos, trabalhadores portuários e comerciantes vivem nos distritos próximos às docas.
-
-Tavernas, mercados e casas de jogo permanecem lotados durante a noite.
-
-Idiomas estrangeiros ainda podem ser ouvidos nas ruas.
-
-Mercadorias continuam chegando.
-
-A vida não desapareceu de Achnoclan.
-
-Apenas mudou.
-
-Nos bairros populares, a decadência é menos uma questão de orgulho e mais uma questão de sobrevivência.
-
-A redução do comércio deixou trabalhadores sem emprego.
-
-Antigos marinheiros aceitaram trabalhos como mercenários.
-
-Contrabandistas passaram a utilizar docas abandonadas.
-
-Gangues disputam territórios que anteriormente eram controlados por companhias comerciais.
-
-Enquanto nobres discutem como restaurar a grandeza de Valiros, grande parte da população simplesmente tenta descobrir como sobreviver ao presente.
+Marinheiros, comerciantes, nobres, mercenários e estrangeiros atravessam diariamente suas ruas, mantendo a capital como um dos principais centros econômicos da Velha Era.
 
 Artigo próprio, ainda não escrito: [[Achnoclan]].
 
 ## Conflitos
 
-A principal ameaça enfrentada por Valiros não é apenas militar.
+O maior desafio de Valiros é a ascensão de **Isteros**.
 
-É a mudança do próprio mundo.
+Os [[Engenharia Imperial (Pássaros de Aço)|Pássaros de Aço]] permitem que pessoas e mercadorias atravessem grandes distâncias sem depender completamente das rotas marítimas.
 
-Durante séculos, a posição geográfica do reino garantiu sua importância.
+A tensão entre as duas potências tornou-se evidente durante [[A Batalha de Jó]].
 
-Mercadorias precisavam passar por suas águas.
+O confronto não encerrou a supremacia naval de Valiros.
 
-Navios precisavam utilizar seus portos.
+Demonstrou, porém, que dominar os mares já não significa ser invulnerável.
 
-Rotas comerciais dependiam da experiência de seus navegadores.
+Desde então, parte do reino defende modernização tecnológica, enquanto outros desejam reforçar ainda mais a tradição naval. Há também aqueles que preferem combater Isteros através de diplomacia, espionagem e operações como a [[Rede de Espionagem em Farlands]].
 
-A ascensão tecnológica de Isteros começou a alterar essa realidade.
+Valiros ainda domina os mares.
 
-Os [[Engenharia Imperial (Pássaros de Aço)|Pássaros de Aço]] permitiram que determinadas cargas e passageiros atravessassem o continente sem utilizar rotas marítimas.
-
-Novas estradas e sistemas logísticos imperiais reduziram ainda mais a dependência dos antigos portos.
-
-Para Valiros, cada inovação capaz de ignorar o mar representa uma ameaça direta.
-
-Essa tensão atingiu seu ponto mais evidente durante [[A Batalha de Jó]].
-
-O confronto demonstrou que a supremacia naval valiriana já não era suficiente para garantir sua segurança.
-
-A derrota deixou marcas profundas na política do reino.
-
-Desde então, três grandes correntes disputam o futuro de Valiros.
-
-A primeira defende a **modernização**.
-
-Seus partidários acreditam que Valiros precisa abandonar parte de suas tradições, investir em novas tecnologias e aprender a combater de maneira semelhante a Isteros.
-
-A segunda defende a **restauração marítima**.
-
-Para esse grupo, a derrota não significa que a era naval terminou, apenas que o reino abandonou os princípios que originalmente tornaram sua frota poderosa.
-
-Eles desejam reconstruir estaleiros, ampliar a marinha e restaurar o controle sobre antigas rotas comerciais.
-
-A terceira corrente prefere agir de maneira menos visível.
-
-Diplomatas, comerciantes e agentes ligados a determinadas casas acreditam que enfrentar Isteros diretamente seria um erro.
-
-Em vez disso, defendem espionagem, alianças, sabotagem econômica e influência política.
-
-É dessa visão que surgem operações como a [[Rede de Espionagem em Farlands]].
-
-As três correntes concordam em um único ponto:
-
-Valiros não pode continuar como está.
-
-O problema é que nenhuma delas concorda sobre aquilo que o reino deve se tornar.
-
-Essa disputa atravessa a aristocracia, a marinha, as companhias comerciais e a própria população.
-
-Em Achnoclan, cada derrota é seguida por promessas de renovação.
-
-Cada crise produz novos discursos sobre o passado.
-
-E cada navio que deixa o porto carrega consigo a mesma pergunta que paira sobre todo o reino:
-
-**Valiros está tentando recuperar sua antiga grandeza — ou apenas adiando o momento em que precisará aceitar que aquela era terminou?**
+A dúvida é se isso continuará sendo suficiente para dominar seu próprio destino.

@@ -9,13 +9,13 @@ atualizado: 2026-09-28
 ---
 
 ```infobox
-Região: Coração de Isteros
+Região: Ilha Central de Isteros, Oceano de Jó
 Governante: [[A Dinastia Ahgamo]]
 População: Aproximadamente 1.200.000 habitantes
 Fundação: Anterior à Dinastia Ahgamo; elevada a capital imperial no Ano 0
 ```
 
-A **Capital Imperial de Isteros** é o maior centro político, econômico e tecnológico do Império. Erguida ao redor do núcleo histórico de onde a Dinastia Ahgamo consolidou seu poder, a cidade cresceu por séculos até tornar-se uma metrópole monumental de pedra, aço, vidro e energia etérea.
+A Capital Imperial de Isteros ergue-se no coração da grande ilha central que domina o Oceano de Jó. Sua posição tornou a cidade um ponto natural de encontro entre rotas marítimas, comércio continental e, mais recentemente, as rotas aéreas mantidas pelos Pássaros de Aço.
 
 É daqui que decretos atravessam as províncias, exércitos recebem ordens, grandes companhias administram suas riquezas e os mais ambiciosos engenheiros do continente apresentam suas invenções.
 

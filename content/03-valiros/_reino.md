@@ -4,7 +4,15 @@ subtitulo: O Sul Decadente
 ordem: 3
 ---
 
-**Valiros** ocupa as terras do sul e já foi, durante séculos, uma das maiores potências do continente. Seus navios dominaram rotas comerciais, seus estaleiros abasteceram frotas inteiras e sua capital, **Achnoclan**, tornou-se símbolo de riqueza, influência e poder marítimo.
+Valiros domina as costas do sul e permanece a maior potência naval da Velha Era. Seus navios percorrem o Oceano de Jó, seus estaleiros produzem algumas das maiores embarcações conhecidas e sua influência marítima alcança portos muito além de suas próprias fronteiras.
+Ainda assim, o Império dos Mares vive um período de decadência.
+O problema de Valiros não é a ausência de poder.
+É a incapacidade de transformar seu enorme poder naval em estabilidade política e renovação.
+Antigas famílias disputam influência, riquezas acumuladas durante séculos concentram-se cada vez mais nas mãos da aristocracia e novas tecnologias desenvolvidas por Isteros começam a ameaçar um mundo construído em torno dos oceanos.
+Sua capital, Achnoclan, continua sendo uma das maiores cidades portuárias conhecidas.
+Seus navios continuam temidos.
+Seus almirantes continuam respeitados.
+Mas por trás dessa grandiosidade existe a sensação crescente de que Valiros está tentando preservar uma ordem que começa lentamente a desaparecer.
 
 Muito antes da ascensão tecnológica de Isteros, eram os estandartes de Valiros que cruzavam os mares.
 

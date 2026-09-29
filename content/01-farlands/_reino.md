@@ -4,7 +4,13 @@ subtitulo: O Noroeste Gélido
 ordem: 1
 ---
 
-**Farlands** ocupa o extremo noroeste do continente, uma região de frio severo, montanhas escarpadas e vastas extensões de gelo onde sobreviver sempre foi mais importante do que prosperar.
+Farlands ocupa o extremo noroeste do mundo conhecido, uma região de gelo permanente, montanhas congeladas e mares cobertos por placas de gelo durante grande parte do ano.
+Apesar de sua distância da Ilha Central, Farlands pertence à esfera de domínio de Isteros e tornou-se conhecida principalmente como sua maior colônia penal.
+Criminosos, prisioneiros políticos, desertores e indivíduos considerados perigosos pelo Império são enviados para o norte, onde prisões, assentamentos forçados e instalações imperiais sobrevivem em condições que poucos habitantes das regiões temperadas conseguiriam suportar.
+No centro desse sistema encontra-se a Fortaleza e Prisão de Helland, principal bastião imperial de Farlands.
+Mas Isteros não encontrou terras vazias.
+Muito antes da chegada de soldados e prisioneiros, povos como os Arhto-Keim já habitavam as regiões congeladas, desenvolvendo formas de vida perfeitamente adaptadas ao ambiente.
+Assim, Farlands tornou-se uma terra dividida entre dois mundos: os povos que pertencem ao gelo e o Império que tenta dominá-lo.
 
 Durante séculos, essas terras permaneceram isoladas pelas próprias condições naturais. Tempestades violentas, caminhos estreitos entre montanhas e longos períodos de inverno tornaram qualquer tentativa de ocupação difícil e custosa. Ainda assim, sob a superfície congelada de Farlands existem algumas das maiores riquezas minerais conhecidas, transformando a região em território de enorme interesse econômico e estratégico.
 

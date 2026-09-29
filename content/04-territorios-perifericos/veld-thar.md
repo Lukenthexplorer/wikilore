@@ -7,150 +7,54 @@ status: rascunho
 resumo: O território de Veld-Thar.
 ---
 
-**Veld-Thar** é uma vasta região de planaltos frios, vales profundos e extensões de pedra exposta situada além das fronteiras consolidadas dos grandes reinos. Pouco povoado e difícil de atravessar, o território permanece politicamente fragmentado e apenas parcialmente registrado pelos cartógrafos da Velha Era.
+**Veld-Thar** ocupa o extremo nordeste da Velha Era, uma região selvagem de florestas antigas, montanhas abruptas, grandes penhascos e vales cobertos por névoas quase permanentes.
 
-Seu nome é antigo.
+O território nunca foi unificado sob uma única Coroa. Povos locais, clãs e comunidades isoladas vivem entre florestas e regiões elevadas, mantendo tradições muito anteriores às grandes potências atuais.
 
-Ninguém sabe ao certo quem primeiro chamou aquelas terras de Veld-Thar, e diferentes povos atribuem significados distintos à expressão. Entre alguns habitantes locais, ela é traduzida como **“terra entre montanhas”**. Outros afirmam que o nome significa simplesmente **“onde o vento permanece”**.
+Para estrangeiros, Veld-Thar é conhecida principalmente por suas **névoas espirituais**, antigos pactos e relatos sobre criaturas que raramente são vistas em outras partes do mundo.
 
-As duas interpretações descrevem bem a região.
-
-Veld-Thar é uma terra marcada por longas distâncias, assentamentos isolados e ruínas que antecedem qualquer domínio político conhecido.
-
-Não possui uma capital.
-
-Não possui uma Coroa.
-
-E, apesar das tentativas de diferentes potências ao longo da história, nunca permaneceu completamente sob o controle de ninguém.
+Entre elas, os dragões.
 
 ## Geografia
 
-A paisagem de Veld-Thar é dominada por grandes **planaltos rochosos**, separados por vales, ravinas e cadeias montanhosas menores.
+Veld-Thar é dominada por florestas densas, montanhas, rios e enormes paredões de pedra.
 
-Diferentemente das extensões permanentemente congeladas do extremo norte, o território apresenta estações mais definidas.
+Cachoeiras descem de grandes alturas e vales inteiros permanecem cobertos por névoa durante boa parte do ano.
 
-Os invernos são rigorosos e frequentemente cobrem as regiões elevadas de neve, mas os meses mais quentes revelam vastos campos de vegetação baixa, rios alimentados pelo degelo e extensões de terra apropriadas para pastoreio.
+A vegetação cresce de forma abundante, escondendo trilhas, ruínas e antigas estruturas.
 
-O vento é uma presença constante.
+Algumas regiões são tão isoladas que aparecem apenas parcialmente nos mapas.
 
-As grandes áreas abertas permitem que correntes atravessem centenas de quilômetros sem encontrar obstáculos significativos. Em determinadas épocas do ano, tempestades vindas das montanhas podem durar dias.
+As chamadas **névoas espirituais** são um dos fenômenos mais conhecidos de Veld-Thar. Em determinadas áreas, elas surgem mesmo sem condições climáticas aparentes e podem permanecer por horas ou dias.
 
-Árvores são raras nas partes centrais.
+Moradores locais evitam algumas dessas regiões.
 
-A maioria cresce em vales protegidos ou próxima aos grandes rios.
-
-Por isso, pedra, barro e ossos de grandes animais são tradicionalmente utilizados como materiais de construção por comunidades locais.
-
-A região possui também diversas formações conhecidas como **fendas de Veld-Thar**.
-
-São enormes rupturas naturais no terreno, algumas largas o bastante para formar verdadeiros cânions.
-
-Rios correm no fundo de muitas delas.
-
-Outras permanecem secas e formam redes de cavernas, passagens e abrigos naturais.
-
-Algumas dessas fendas apresentam sinais de ocupação muito antiga.
-
-Paredes esculpidas, pilares quebrados e entradas artificiais já foram encontrados em regiões onde não existem assentamentos conhecidos há gerações.
-
-A origem dessas estruturas permanece desconhecida.
-
-Comparada com [[Visão Geral de Farlands#Geografia|a geografia de Farlands]], Veld-Thar é menos extrema, mas também menos previsível.
-
-Farlands é dominada pelo frio permanente de suas regiões mais setentrionais.
-
-Veld-Thar alterna entre invernos violentos, degelos repentinos, períodos secos e tempestades intensas.
-
-Onde Farlands força seus habitantes a sobreviver contra o gelo, Veld-Thar exige adaptação constante às mudanças do terreno e do clima.
-
-A região também possui grande importância como corredor natural.
-
-Diversas rotas terrestres entre o norte, o oeste e as regiões centrais do continente atravessam seus vales.
-
-Controlar determinados passos significa controlar caravanas inteiras.
-
-Por isso, pequenas fortalezas e postos de cobrança surgiram repetidamente ao longo dessas rotas.
-
-Poucos permaneceram ocupados por muito tempo.
+Também existem relatos sobre dragões vivendo nas montanhas mais remotas, embora poucos estrangeiros tenham sobrevivido a encontros próximos o bastante para confirmar essas histórias.
 
 ## História
 
-A história registrada de Veld-Thar é fragmentada.
+Grande parte da história de Veld-Thar é preservada por tradição oral.
 
-Não existe uma única cronologia aceita para o território.
+As comunidades locais falam de antigos pactos feitos entre seus ancestrais e forças ligadas às montanhas, florestas e criaturas da região.
 
-Grande parte do que se conhece provém de tradições orais, inscrições encontradas em ruínas e relatos produzidos por comerciantes estrangeiros.
+Não se sabe quanto desses relatos é história, religião ou lenda.
 
-Os assentamentos mais antigos conhecidos parecem ter surgido próximos aos rios e às áreas protegidas dos grandes vales.
+Diversas potências tentaram estabelecer domínio sobre Veld-Thar ao longo dos séculos.
 
-Essas comunidades nunca formaram um reino unificado.
+Nenhuma conseguiu manter controle profundo sobre o território.
 
-Em vez disso, organizaram-se em pequenos grupos ligados por parentesco, comércio e alianças temporárias.
+Exércitos conseguem ocupar vales e passagens, mas desaparecem rapidamente quando avançam demais para o interior.
 
-Guerras entre comunidades eram comuns.
+Por isso, Veld-Thar desenvolveu a reputação de ser uma terra que não aceita facilmente governantes estrangeiros.
 
-Também eram comuns períodos de cooperação diante de ameaças externas.
+Ruínas espalhadas pelas florestas indicam que civilizações antigas já habitaram a região em maior escala.
 
-Essa característica permaneceu constante ao longo dos séculos.
+Algumas possuem inscrições desconhecidas.
 
-Diversos governantes tentaram transformar Veld-Thar em uma província permanente.
+Outras parecem ter sido construídas deliberadamente em locais onde as névoas espirituais são mais intensas.
 
-Nenhum conseguiu fazê-lo completamente.
+Até hoje, ninguém conseguiu explicar completamente sua origem.
 
-Exércitos podiam ocupar cidades ou controlar rotas importantes, mas manter domínio sobre os planaltos exigia homens, alimento e recursos em quantidades que raramente justificavam o esforço.
+Veld-Thar continua sendo uma das regiões menos compreendidas da Velha Era.
 
-Quando uma potência se retirava, as antigas estruturas locais simplesmente reapareciam.
-
-Por isso surgiu entre cronistas estrangeiros a ideia de que **Veld-Thar não pode ser conquistada, apenas atravessada**.
-
-Essa afirmação nunca foi inteiramente verdadeira.
-
-Mas tornou-se parte da reputação do território.
-
-Durante o período de expansão das grandes rotas comerciais, Veld-Thar ganhou nova importância.
-
-Caravanas começaram a utilizar seus vales como caminho alternativo para evitar tarifas, guerras e bloqueios existentes em regiões mais controladas.
-
-Pequenos assentamentos cresceram ao redor dessas rotas.
-
-Alguns se transformaram em mercados permanentes.
-
-Outros tornaram-se refúgios de mercenários, contrabandistas e fugitivos.
-
-Essa mistura de povos criou uma cultura profundamente desconfiada de governos distantes.
-
-Autoridade em Veld-Thar raramente deriva de títulos.
-
-Ela deriva da capacidade de proteger uma comunidade, controlar água, manter uma rota aberta ou garantir alimento durante o inverno.
-
-Um governante estrangeiro pode declarar posse sobre centenas de quilômetros de território.
-
-Para os habitantes locais, essa declaração significa pouco caso seus soldados nunca apareçam.
-
-Nas últimas gerações, o interesse externo por Veld-Thar voltou a crescer.
-
-Exploradores encontraram depósitos minerais nas regiões montanhosas.
-
-Mercadores procuram novas rotas através dos planaltos.
-
-E estudiosos demonstram interesse crescente pelas estruturas antigas encontradas nas fendas.
-
-Existem rumores de que algumas dessas ruínas compartilham características com construções encontradas em outras regiões remotas do continente.
-
-Nada foi comprovado.
-
-Ainda assim, expedições continuam desaparecendo nas áreas mais profundas do território.
-
-Algumas simplesmente nunca retornam.
-
-Outras voltam com mapas incompletos, artefatos impossíveis de identificar e histórias que poucos estudiosos estão dispostos a registrar oficialmente.
-
-Veld-Thar permanece, portanto, como sempre foi:
-
-uma terra entre fronteiras.
-
-Perto o bastante dos grandes reinos para despertar sua cobiça.
-
-Distante o bastante para resistir a eles.
-
-E antiga o bastante para guardar coisas que nenhum deles compreende completamente.
+Uma terra onde natureza, espírito e história parecem existir muito próximos uns dos outros.

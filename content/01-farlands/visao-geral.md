@@ -9,14 +9,16 @@ atualizado: 2026-09-29
 ---
 
 ```infobox
-Região: Extremo Noroeste do continente
-Capital: Não possui capital formal; [[Fortaleza e Prisão de Helland|Helland]] atua como centro administrativo
-Clima: Glacial, com invernos prolongados e tempestades frequentes
-Governo: Administração imperial de fronteira e territórios autônomos
+Região: Extremo Noroeste
+Capital: Não possui capital própria; [[Fortaleza e Prisão de Helland|Helland]] é o principal centro imperial
+Clima: Glacial, com gelo permanente e tempestades severas
+Governo: Administração colonial de Isteros
 Povos: [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]]
 ```
 
-**Farlands** é o nome dado às vastas terras que ocupam o extremo noroeste do continente, uma região de montanhas, vales congelados e planícies cobertas de neve durante a maior parte do ano.
+Farlands é uma possessão setentrional de Isteros situada no extremo noroeste do mundo conhecido. Separada da Ilha Central pelas águas do norte, a região é formada por terras congeladas, arquipélagos de gelo, cadeias montanhosas e extensões de tundra onde a presença imperial permanece concentrada em fortalezas, minas e colônias penais.
+Para Isteros, Farlands cumpre três funções fundamentais: prisão, fronteira e fonte de recursos.
+É para lá que são enviados muitos daqueles que o Império deseja afastar de seus centros populacionais. Ao mesmo tempo, expedições militares e científicas utilizam a região como base para explorar os territórios congelados e os segredos encontrados sob suas montanhas.
 
 Diferentemente dos grandes centros urbanos de Isteros, Farlands nunca se desenvolveu ao redor de cidades densamente povoadas ou de uma única autoridade central. Seu território é amplo, fragmentado e difícil de controlar, formado por pequenas comunidades, postos militares, minas e assentamentos separados por longas distâncias.
 

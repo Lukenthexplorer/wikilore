@@ -8,7 +8,10 @@ resumo: O povo Arhto-Keim, habitante das terras geladas.
 atualizado: 2026-09-20
 ---
 
-Os **Arhto-Keim**, conhecidos entre estrangeiros como o **Povo do Frio**, são um dos povos mais antigos de Farlands. Adaptados ao gelo, às montanhas e aos longos invernos do noroeste, sobreviveram por incontáveis gerações em regiões onde a maioria dos povos do continente dificilmente suportaria permanecer por alguns dias.
+A relação entre os Arhto-Keim e Isteros começou a mudar quando o Império transformou partes de Farlands em território colonial e penal.
+Fortalezas foram erguidas, minas abertas e milhares de estrangeiros — soldados, administradores, trabalhadores e prisioneiros — passaram a ocupar regiões que os clãs Arhto-Keim utilizavam havia gerações.
+Para a administração imperial, Farlands é uma possessão de Isteros.
+Para muitos Arhto-Keim, essa afirmação nunca teve qualquer significado legítimo.
 
 Sua aparência reflete essa adaptação.
 
