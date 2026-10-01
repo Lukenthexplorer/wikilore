@@ -1,4 +1,3 @@
-```markdown
 ---
 titulo: Sir Windlock Bohgmah
 ordem: 2
@@ -34,7 +33,7 @@ Situação: Presumido morto
 
 Nascido em Quetz-Longbridge por volta do ano 1096 da Era Comum, Windlock Bohgmah demonstrou desde a infância uma aptidão extraordinária para o estudo. Ingressou ainda muito jovem na Academia Real de Ciências, onde se destacou em matemática, filosofia natural e física. Antes dos trinta anos, já havia publicado trabalhos sobre o movimento dos corpos, a conservação da energia e os fundamentos matemáticos empregados nos sistemas tecnológicos de Isteros. Sua capacidade de relacionar diferentes áreas do conhecimento tornou-o um dos intelectuais mais respeitados de sua geração.
 
-O título de *Sir* foi-lhe concedido pela Coroa após sua participação no aperfeiçoamento dos mecanismos de navegação e estabilização utilizados pelos [[Pássaros de Aço]]. Embora Bohgmah jamais tenha se considerado um inventor, seus cálculos solucionaram falhas responsáveis por diversos acidentes ocorridos durante os primeiros voos de longa distância. Essa contribuição lhe rendeu reconhecimento público, uma cadeira permanente na Academia e acesso privilegiado aos arquivos científicos e históricos do Império.
+O título de *Sir* foi-lhe concedido pela Coroa após sua participação no aperfeiçoamento dos mecanismos de navegação e estabilização utilizados pelos [[Engenharia Imperial (Pássaros de Aço)|Pássaros de Aço]]. Embora Bohgmah jamais tenha se considerado um inventor, seus cálculos solucionaram falhas responsáveis por diversos acidentes ocorridos durante os primeiros voos de longa distância. Essa contribuição lhe rendeu reconhecimento público, uma cadeira permanente na Academia e acesso privilegiado aos arquivos científicos e históricos do Império.
 
 Sua carreira começou a mudar quando passou a estudar documentos anteriores à fundação de Isteros. Inicialmente, Bohgmah tratava os relatos de magia como registros imperfeitos de fenômenos naturais ou de tecnologias antigas. Entretanto, a repetição de descrições semelhantes entre povos sem contato conhecido levou-o a considerar que algumas dessas ocorrências talvez não pudessem ser explicadas pelo conhecimento científico existente.
 
@@ -86,14 +85,14 @@ Bohgmah foi oficialmente considerado morto aos cento e seis anos. Entretanto, a 
 c. 1096 | Nasce em Quetz-Longbridge.
 c. 1118 | Inicia suas investigações sobre relatos de magia.
 Antes de 1126 | Publica seus primeiros trabalhos sobre matemática e física.
-c. 1130 | Recebe da Coroa o título de Sir por sua contribuição aos Pássaros de Aço.
+c. 1130 | Recebe da Coroa o título de Sir por sua contribuição aos [[Engenharia Imperial (Pássaros de Aço)|Pássaros de Aço]].
 1147 | Inicia seus cadernos pessoais de viagem.
-1149 | Registra em Zul’Vahra o relato do homem que caminhava sobre as dunas.
-c. 1181 | Publica o Catálogo preliminar de fenômenos não classificados.
+1149 | Registra em [[Zul Vahra|Zul’Vahra]] o relato do homem que caminhava sobre as dunas.
+c. 1181 | Publica o *Catálogo preliminar de fenômenos não classificados*.
 c. 1190 | É descredenciado pela Academia Real de Ciências.
 1199 | Produz os últimos registros conhecidos de seus cadernos de viagem.
-1200 | Conclui Investigações sobre a Magia aos cento e quatro anos.
-1202 | Parte em uma expedição para Veld-Thar e desaparece no Mar de Thar, aos cento e seis anos.
+1200 | Conclui [[Investigações sobre a Magia]] aos cento e quatro anos.
+1202 | Parte em uma expedição para [[Veld-Thar]] e desaparece no [[Mar de Thar]], aos cento e seis anos.
 ```
 
 ## Legado
@@ -101,4 +100,3 @@ c. 1190 | É descredenciado pela Academia Real de Ciências.
 Após seu desaparecimento, Bohgmah continuou a ser lembrado de duas maneiras inconciliáveis. Para parte da Academia, foi um cientista brilhante que sacrificou a própria carreira perseguindo superstições. Para seus admiradores, foi um dos poucos intelectuais de Isteros dispostos a reconhecer os limites da ciência de seu tempo.
 
 O aparente naufrágio no Mar de Thar reforçou ambas as interpretações. Seus críticos o consideraram o desfecho trágico de uma obsessão; seus seguidores, a última etapa de uma investigação que talvez tenha terminado além das fronteiras conhecidas.
-```
