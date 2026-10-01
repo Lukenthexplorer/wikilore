@@ -1,6 +1,6 @@
 import { useEffect, type ReactNode } from 'react'
 import { Link, NavLink, useParams } from 'react-router-dom'
-import { reinos } from '../lib/content'
+import { reinos, ROTULO_PADRAO } from '../lib/content'
 import { usePreferencia } from '../lib/storage'
 import { IconeChevron, IconePasta } from './Icons'
 
@@ -62,7 +62,7 @@ export default function Sidebar({ id, aberta, onFechar, onBuscar, temaControle }
                 <ul id={listaId} hidden={!aberto}>
                   <li>
                     <NavLink to={reino.caminho} end className="arvore__doc arvore__doc--sobre" onClick={onFechar}>
-                      Sobre o reino
+                      {reino.rotulo === ROTULO_PADRAO ? 'Sobre o reino' : 'Apresentação'}
                     </NavLink>
                   </li>
                   {reino.documentos.map((doc) => (

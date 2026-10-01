@@ -19,7 +19,7 @@ export default function ReinoPage() {
   return (
     <div className="pagina" key={reino.slug}>
       <header className="pagina__cabecalho">
-        <p className="sobretitulo">Reino</p>
+        <p className="sobretitulo">{reino.rotulo}</p>
         <h1 className="pagina__titulo">{reino.nome}</h1>
         {reino.subtitulo && <p className="pagina__subtitulo">{reino.subtitulo}</p>}
       </header>
@@ -33,7 +33,7 @@ export default function ReinoPage() {
       <section aria-labelledby="docs-reino">
         <h2 id="docs-reino" className="secao-titulo">Documentos</h2>
         {reino.documentos.length === 0 ? (
-          <p className="vazio">Nenhum documento neste reino ainda.</p>
+          <p className="vazio">Nenhum documento aqui ainda.</p>
         ) : (
           <ol className="lista-docs">
             {reino.documentos.map((doc) => (

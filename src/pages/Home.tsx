@@ -1,12 +1,15 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { atualizadosRecentemente, reinoDe, reinos } from '../lib/content'
+import { atualizadosRecentemente, reinoDe, reinos, ROTULO_PADRAO, type Reino } from '../lib/content'
 
 const formatoData = new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
 
 /** Capa do arquivo: os reinos e os registros atualizados recentemente. */
 export default function Home() {
   const recentes = atualizadosRecentemente()
+  // Pastas com `rotulo` próprio (biblioteca, acervos…) ficam separadas dos reinos.
+  const soReinos = reinos.filter((r) => r.rotulo === ROTULO_PADRAO)
+  const colecoes = reinos.filter((r) => r.rotulo !== ROTULO_PADRAO)
 
   useEffect(() => {
     document.title = 'Arquivo da Velha Era'
@@ -23,23 +26,8 @@ export default function Home() {
         </div>
       </header>
 
-      <section aria-labelledby="capa-reinos">
-        <h2 id="capa-reinos" className="secao-titulo">Os Reinos</h2>
-        <ol className="grade-reinos">
-          {reinos.map((reino, i) => (
-            <li key={reino.slug}>
-              <Link to={reino.caminho} className="cartao-reino">
-                <span className="cartao-reino__numero">{toRomano(i + 1)}</span>
-                <span className="cartao-reino__nome">{reino.nome}</span>
-                {reino.subtitulo && <span className="cartao-reino__subtitulo">{reino.subtitulo}</span>}
-                <span className="cartao-reino__contagem">
-                  {reino.documentos.length} {reino.documentos.length === 1 ? 'documento' : 'documentos'}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </section>
+      <GradeDePastas id="capa-reinos" titulo="Os Reinos" pastas={soReinos} />
+      {colecoes.length > 0 && <GradeDePastas id="capa-colecoes" titulo="Acervo" pastas={colecoes} />}
 
       {recentes.length > 0 && (
         <section aria-labelledby="capa-recentes">
@@ -60,6 +48,28 @@ export default function Home() {
         </section>
       )}
     </div>
+  )
+}
+
+function GradeDePastas({ id, titulo, pastas }: { id: string; titulo: string; pastas: Reino[] }) {
+  return (
+    <section aria-labelledby={id}>
+      <h2 id={id} className="secao-titulo">{titulo}</h2>
+      <ol className="grade-reinos">
+        {pastas.map((pasta, i) => (
+          <li key={pasta.slug}>
+            <Link to={pasta.caminho} className="cartao-reino">
+              <span className="cartao-reino__numero">{toRomano(i + 1)}</span>
+              <span className="cartao-reino__nome">{pasta.nome}</span>
+              {pasta.subtitulo && <span className="cartao-reino__subtitulo">{pasta.subtitulo}</span>}
+              <span className="cartao-reino__contagem">
+                {pasta.documentos.length} {pasta.documentos.length === 1 ? 'documento' : 'documentos'}
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ol>
+    </section>
   )
 }
 

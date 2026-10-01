@@ -19,7 +19,7 @@ import { normalizar, slugificar, tituloDoArquivo } from './text'
 // Tipos
 // ---------------------------------------------------------------------------
 
-export const TIPOS = ['artigo', 'visao-geral', 'relatorio', 'linha-do-tempo'] as const
+export const TIPOS = ['artigo', 'visao-geral', 'relatorio', 'linha-do-tempo', 'manuscrito', 'biografia'] as const
 export type TipoDoc = (typeof TIPOS)[number]
 
 export const STATUS = ['rascunho', 'canonico'] as const
@@ -30,12 +30,17 @@ export const ROTULO_TIPO: Record<TipoDoc, string> = {
   'visao-geral': 'Visão geral',
   relatorio: 'Relatório',
   'linha-do-tempo': 'Linha do tempo',
+  manuscrito: 'Manuscrito',
+  biografia: 'Biografia',
 }
 
 export const ROTULO_STATUS: Record<StatusDoc, string> = {
   rascunho: 'Rascunho',
   canonico: 'Canônico',
 }
+
+/** Rótulo das pastas que não declaram `rotulo` no _reino.md. */
+export const ROTULO_PADRAO = 'Reino'
 
 export interface Documento {
   /** `reino/slug`, único em toda a wiki. */
@@ -68,6 +73,11 @@ export interface Reino {
   caminho: string
   nome: string
   subtitulo?: string
+  /**
+   * O que esta pasta é: "Reino" por padrão. Pastas que não são reinos (ex.: uma
+   * biblioteca de manuscritos) definem `rotulo` no _reino.md e aparecem à parte na capa.
+   */
+  rotulo: string
   ordem: number
   introducao: string
   documentos: Documento[]
@@ -218,6 +228,7 @@ function criarReino(pasta: string): Reino {
     caminho: `/${slug}`,
     // Valores provisórios; substituídos pelo _reino.md quando existir.
     nome: tituloDoArquivo(semPrefixo || pasta),
+    rotulo: ROTULO_PADRAO,
     ordem: prefixo ? Number(prefixo) : Number.MAX_SAFE_INTEGER,
     introducao: '',
     documentos: [],
@@ -230,6 +241,7 @@ function aplicarMetadadosDoReino(reino: Reino, raw: string, arquivo: string): vo
   const avisos: Avisos = erro ? [erro] : []
   reino.nome = lerTexto(dados, 'nome', avisos) ?? reino.nome
   reino.subtitulo = lerTexto(dados, 'subtitulo', avisos)
+  reino.rotulo = lerTexto(dados, 'rotulo', avisos) ?? reino.rotulo
   reino.ordem = lerNumero(dados, 'ordem', avisos) ?? reino.ordem
   reino.introducao = corpo.trim()
   reino.avisos.push(...avisos.map((a) => `${arquivo}: ${a}`))
