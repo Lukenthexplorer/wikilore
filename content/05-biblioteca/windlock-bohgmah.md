@@ -10,6 +10,7 @@ atualizado: 2026-10-01
 
 ```infobox
 # Sir Windlock Bohgmah
+![[sir-windlock-bohgmah.jpg|Sir Windlock Bohgmah em seu gabinete]]
 Nascimento: c. 1096 da Era Comum
 Desaparecimento: 1202 da Era Comum
 Idade: 106 anos

@@ -111,6 +111,17 @@ Capital: [[Visão Geral da Capital]]
 
 Pares `Chave: Valor`. Flutua à direita no desktop e vai para o topo do documento no celular.
 
+Para um **retrato, brasão ou mapa no topo da ficha** (como nas biografias da Wikipédia), coloque a
+imagem na pasta do reino e acrescente uma linha dentro do bloco, com a legenda depois do `|`:
+
+````markdown
+```infobox
+# Sir Windlock Bohgmah
+![[sir-windlock-bohgmah.jpg|Sir Windlock Bohgmah em seu gabinete]]
+Nascimento: c. 1096 da Era Comum
+```
+````
+
 ### Imagens
 
 1. Coloque a imagem **na pasta do reino**, ao lado dos documentos

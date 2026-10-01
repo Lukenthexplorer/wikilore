@@ -3,8 +3,9 @@
  *
  *   ```timeline            ```infobox
  *   Ano 12 | Evento        # Título opcional
- *   Ano 40 | Evento        Chave: Valor
- *   ```                    ```
+ *   Ano 40 | Evento        ![[retrato.jpg|Legenda opcional]]
+ *   ```                    Chave: Valor
+ *                          ```
  *
  * São formatos de linha simples de propósito: fáceis de escrever à mão e
  * tolerantes a erro (linhas fora do padrão não quebram nada).
@@ -26,6 +27,8 @@ export function lerTimeline(fonte: string): MarcoTimeline[] {
 
 export interface Infobox {
   titulo?: string
+  /** Imagem de topo (retrato, brasão, mapa), como nas fichas de enciclopédia. */
+  imagem?: { src: string; legenda: string }
   campos: { chave: string; valor: string }[]
 }
 
@@ -34,6 +37,13 @@ export function lerInfobox(fonte: string): Infobox {
   for (const linha of linhasUteis(fonte)) {
     if (linha.startsWith('#')) {
       infobox.titulo = linha.replace(/^#+\s*/, '')
+      continue
+    }
+    // Linha de imagem. Chega aqui como ![legenda](<arquivo>): o ![[arquivo|legenda]]
+    // do autor já foi convertido em lib/wikilinks.ts.
+    const imagem = /^!\[([^\]]*)\]\(<?([^>)]+)>?\)$/.exec(linha)
+    if (imagem) {
+      infobox.imagem = { legenda: imagem[1]!.trim(), src: imagem[2]!.trim() }
       continue
     }
     // Divide só no primeiro ":" para permitir valores como "12:30" ou URLs.

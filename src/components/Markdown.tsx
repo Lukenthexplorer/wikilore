@@ -44,14 +44,6 @@ function Imagem({ pasta, src = '', alt = '' }: { pasta: string; src?: string; al
 const componentesBase: Components = {
   a: ({ href, children }) => <MarkdownLink href={href}>{children}</MarkdownLink>,
 
-  // Blocos ```timeline``` e ```infobox``` viram componentes; o resto é código normal.
-  pre: ({ node, children }) => {
-    const bloco = lerBlocoDeCodigo(node)
-    if (bloco?.lang === 'timeline') return <Timeline fonte={bloco.texto} />
-    if (bloco?.lang === 'infobox') return <Infobox fonte={bloco.texto} />
-    return <pre>{children}</pre>
-  },
-
   // O plugin remark-callouts marca os blockquotes que são callouts.
   blockquote: ({ node, children }) => {
     const tipo = node?.properties.dataCallout
@@ -82,7 +74,17 @@ interface MarkdownProps {
 function Markdown({ fonte, pasta }: MarkdownProps) {
   const processado = useMemo(() => transformarWikilinks(fonte), [fonte])
   const componentes = useMemo<Components>(
-    () => ({ ...componentesBase, img: ({ src, alt }) => <Imagem pasta={pasta} src={src} alt={alt} /> }),
+    () => ({
+      ...componentesBase,
+      img: ({ src, alt }) => <Imagem pasta={pasta} src={src} alt={alt} />,
+      // Blocos ```timeline``` e ```infobox``` viram componentes; o resto é código normal.
+      pre: ({ node, children }) => {
+        const bloco = lerBlocoDeCodigo(node)
+        if (bloco?.lang === 'timeline') return <Timeline fonte={bloco.texto} />
+        if (bloco?.lang === 'infobox') return <Infobox fonte={bloco.texto} pasta={pasta} />
+        return <pre>{children}</pre>
+      },
+    }),
     [pasta],
   )
   return (
