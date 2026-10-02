@@ -349,16 +349,6 @@ Oficialmente, Veld-Thar ocupa posição marginal nos estudos acadêmicos. A regi
 
 O interesse público por Veld-Thar aumentou após os trabalhos de [[Sir Windlock Bohgmah]], que propôs que as manifestações chamadas de magia poderiam possuir uma origem comum naquela região.
 
-## Sir Windlock Bohgmah
-
-[[Sir Windlock Bohgmah]] nasceu em Quetz-Longbridge e desenvolveu ali grande parte de sua carreira.
-
-Antes de se dedicar ao estudo da magia, destacou-se em matemática, filosofia natural e física. Seus cálculos contribuíram para o aperfeiçoamento dos mecanismos de navegação e estabilização dos Pássaros de Aço, serviço pelo qual recebeu o título de *Sir*.
-
-Posteriormente, Bohgmah foi descredenciado pela Academia Real de Ciências. Seus objetos, documentos e amostras foram confiscados e permanecem guardados nos chamados **Cofres de Quetz**.
-
-Oficialmente, os cofres contêm apenas materiais perigosos e documentos sem valor científico comprovado. A Academia, entretanto, restringe completamente seu acesso.
-
 ## Lugares importantes
 
 | Local | Função |
