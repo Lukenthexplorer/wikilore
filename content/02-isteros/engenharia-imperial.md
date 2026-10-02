@@ -3,6 +3,7 @@ titulo: Engenharia Imperial (Pássaros de Aço)
 ordem: 4
 tipo: artigo
 tags: [engenharia, tecnologia, isteros]
+apelidos: [Pássaros de Aço]
 status: rascunho
 resumo: A engenharia imperial e os Pássaros de Aço.
 atualizado: 2026-09-15

@@ -45,7 +45,9 @@ function transformarEmbeds(trecho: string): string {
 const destinos = new Map<string, string>()
 for (const reino of reinos) destinos.set(normalizar(reino.nome), reino.caminho)
 for (const doc of documentos) destinos.set(normalizar(doc.slug.replace(/-/g, ' ')), doc.caminho)
-// Títulos por último: têm prioridade sobre slugs e nomes de reino.
+// Apelidos declarados no frontmatter (`apelidos: [Longbridge]`).
+for (const doc of documentos) for (const apelido of doc.apelidos) destinos.set(normalizar(apelido), doc.caminho)
+// Títulos por último: têm prioridade sobre slugs, apelidos e nomes de reino.
 for (const doc of documentos) destinos.set(normalizar(doc.titulo), doc.caminho)
 
 export interface WikilinkResolvido {

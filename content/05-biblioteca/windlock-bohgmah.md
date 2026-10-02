@@ -15,7 +15,7 @@ Nascimento: c. 1096 da Era Comum
 Desaparecimento: 1202 da Era Comum
 Idade: 106 anos
 Local do desaparecimento: Mar de Thar
-Residência: Quetz-Longbridge, [[Isteros]]
+Residência: [[Quetz-Longbridge]], [[Isteros]]
 Ocupação: Acadêmico, físico e investigador
 Instituição: Academia Real de Ciências (descredenciado)
 Cátedra: História Pré-Imperial (antigo titular)
@@ -25,14 +25,14 @@ Situação: Presumido morto
 
 **Sir Windlock Bohgmah** foi um acadêmico de [[Isteros]], antigo titular da Cátedra de História Pré-Imperial e membro descredenciado da Academia Real de Ciências. Reconhecido durante a juventude por seus trabalhos em matemática, filosofia natural e física, dedicou a maior parte da vida à investigação de fenômenos atribuídos à magia.
 
-É o autor de [[Investigações sobre a Magia]], manuscrito concluído em Quetz-Longbridge no inverno do ano 1200 da Era Comum, quando contava cento e quatro anos. Dois anos depois, aos cento e seis, desapareceu durante uma expedição marítima destinada a alcançar [[Veld-Thar]]. Sua embarcação aparentemente naufragou nas rochas do [[Mar de Thar]], e Bohgmah foi dado como morto.
+É o autor de [[Investigações sobre a Magia]], manuscrito concluído em [[Quetz-Longbridge]] no inverno do ano 1200 da Era Comum, quando contava cento e quatro anos. Dois anos depois, aos cento e seis, desapareceu durante uma expedição marítima destinada a alcançar [[Veld-Thar]]. Sua embarcação aparentemente naufragou nas rochas do [[Mar de Thar]], e Bohgmah foi dado como morto.
 
 > [!nota] Fontes
 > As informações sobre as investigações e viagens de Bohgmah provêm de seu manuscrito e de seus cadernos pessoais. Os dados sobre sua carreira foram preservados nos registros da Academia Real de Ciências. As circunstâncias de sua última expedição permanecem incertas, pois não houve sobreviventes conhecidos e seu corpo nunca foi encontrado. As datas marcadas com “c.” são aproximadas.
 
 ## Vida e carreira
 
-Nascido em Quetz-Longbridge por volta do ano 1096 da Era Comum, Windlock Bohgmah demonstrou desde a infância uma aptidão extraordinária para o estudo. Ingressou ainda muito jovem na Academia Real de Ciências, onde se destacou em matemática, filosofia natural e física. Antes dos trinta anos, já havia publicado trabalhos sobre o movimento dos corpos, a conservação da energia e os fundamentos matemáticos empregados nos sistemas tecnológicos de Isteros. Sua capacidade de relacionar diferentes áreas do conhecimento tornou-o um dos intelectuais mais respeitados de sua geração.
+Nascido em [[Quetz-Longbridge]] por volta do ano 1096 da Era Comum, Windlock Bohgmah demonstrou desde a infância uma aptidão extraordinária para o estudo. Ingressou ainda muito jovem na Academia Real de Ciências, onde se destacou em matemática, filosofia natural e física. Antes dos trinta anos, já havia publicado trabalhos sobre o movimento dos corpos, a conservação da energia e os fundamentos matemáticos empregados nos sistemas tecnológicos de Isteros. Sua capacidade de relacionar diferentes áreas do conhecimento tornou-o um dos intelectuais mais respeitados de sua geração.
 
 O título de *Sir* foi-lhe concedido pela Coroa após sua participação no aperfeiçoamento dos mecanismos de navegação e estabilização utilizados pelos [[Engenharia Imperial (Pássaros de Aço)|Pássaros de Aço]]. Embora Bohgmah jamais tenha se considerado um inventor, seus cálculos solucionaram falhas responsáveis por diversos acidentes ocorridos durante os primeiros voos de longa distância. Essa contribuição lhe rendeu reconhecimento público, uma cadeira permanente na Academia e acesso privilegiado aos arquivos científicos e históricos do Império.
 
@@ -83,7 +83,7 @@ Bohgmah foi oficialmente considerado morto aos cento e seis anos. Entretanto, a 
 ## Cronologia
 
 ```timeline
-c. 1096 | Nasce em Quetz-Longbridge.
+c. 1096 | Nasce em [[Quetz-Longbridge]].
 c. 1118 | Inicia suas investigações sobre relatos de magia.
 Antes de 1126 | Publica seus primeiros trabalhos sobre matemática e física.
 c. 1130 | Recebe da Coroa o título de Sir por sua contribuição aos [[Engenharia Imperial (Pássaros de Aço)|Pássaros de Aço]].

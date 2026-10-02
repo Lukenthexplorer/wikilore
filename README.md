@@ -22,7 +22,8 @@ npm run preview   # serve o dist/ localmente para conferir o build
    |--------------|:-----------:|---------------------------------------|------------|
    | `titulo`     | sim         | `Guarda Imperial`                     | Use aspas se tiver `:` → `"Relatório: X"` |
    | `ordem`      |             | `5`                                   | Posição na sidebar; empate → ordem alfabética |
-   | `tipo`       |             | `artigo`                              | `artigo`, `visao-geral`, `relatorio`, `linha-do-tempo` |
+   | `tipo`       |             | `artigo`                              | `artigo`, `visao-geral`, `relatorio`, `linha-do-tempo`, `manuscrito`, `biografia`, `local` |
+   | `apelidos`   |             | `[Longbridge]`                        | Outros nomes que `[[links]]` aceitam para este documento |
    | `tags`       |             | `[militar, capital]`                  | Entram na busca |
    | `status`     |             | `rascunho`                            | `rascunho` ou `canônico` |
    | `resumo`     |             | `Uma frase.`                          | Aparece na busca e em "Mencionado em" |

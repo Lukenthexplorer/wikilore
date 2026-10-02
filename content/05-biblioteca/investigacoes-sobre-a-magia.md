@@ -12,7 +12,7 @@ atualizado: 2026-10-01
 # Manuscrito
 Autor: [[Sir Windlock Bohgmah]]
 Data: Ano 1200 da Era Comum
-Local: Quetz-Longbridge, [[Isteros]]
+Local: [[Quetz-Longbridge]], [[Isteros]]
 Relatos: 417 examinados
 ```
 
@@ -97,7 +97,7 @@ Mineradores instalados próximos às montanhas de [[Visão Geral de Farlands#Geo
 
 ## VIII — O viajante sem sombra
 
-Em Quetz-Longbridge, um comerciante e seus dois empregados declararam ter recebido, pouco antes do entardecer, um viajante interessado em adquirir mapas antigos. Embora a luz das janelas projetasse claramente as sombras dos móveis e das demais pessoas, o desconhecido não projetava nenhuma. Ele partiu antes de concluir a compra e jamais foi identificado.
+Em [[Quetz-Longbridge]], um comerciante e seus dois empregados declararam ter recebido, pouco antes do entardecer, um viajante interessado em adquirir mapas antigos. Embora a luz das janelas projetasse claramente as sombras dos móveis e das demais pessoas, o desconhecido não projetava nenhuma. Ele partiu antes de concluir a compra e jamais foi identificado.
 
 ## Conclusão
 
@@ -109,7 +109,7 @@ Trinta ocorrências não são suficientes para provar a existência da magia.
 
 Mas são suficientes para demonstrar que a Academia está errada ao declarar impossível aquilo que simplesmente ainda não compreende.
 
-Se este manuscrito sobreviver a mim, peço ao futuro leitor apenas uma coisa: não aceite minhas conclusões como verdade. Refaça minhas viagens. Entre nas cavernas que assinalei. Converse com as testemunhas que ainda respiram. Examine os objetos que deixei lacrados nos cofres de Quetz-Longbridge.
+Se este manuscrito sobreviver a mim, peço ao futuro leitor apenas uma coisa: não aceite minhas conclusões como verdade. Refaça minhas viagens. Entre nas cavernas que assinalei. Converse com as testemunhas que ainda respiram. Examine os objetos que deixei lacrados nos cofres de [[Quetz-Longbridge]].
 
 E, sobretudo, quando encontrar algo impossível, não cometa o erro de chamar imediatamente de magia.
 

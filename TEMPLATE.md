@@ -5,7 +5,8 @@
 
 titulo: Título do Documento   # use aspas se tiver dois-pontos: "Relatório: Algo"
 ordem: 10                     # posição na sidebar (menor = mais acima); empate → alfabética
-tipo: artigo                  # artigo | visao-geral | relatorio | linha-do-tempo
+tipo: artigo                  # artigo | visao-geral | relatorio | linha-do-tempo | manuscrito | biografia | local
+# apelidos: [Outro Nome]     # opcional: nomes alternativos que [[links]] também encontram
 tags: [tag-um, tag-dois]
 status: rascunho              # rascunho | canônico
 resumo: Uma frase que aparece na busca e em "Mencionado em".

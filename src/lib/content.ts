@@ -19,7 +19,7 @@ import { normalizar, slugificar, tituloDoArquivo } from './text'
 // Tipos
 // ---------------------------------------------------------------------------
 
-export const TIPOS = ['artigo', 'visao-geral', 'relatorio', 'linha-do-tempo', 'manuscrito', 'biografia'] as const
+export const TIPOS = ['artigo', 'visao-geral', 'relatorio', 'linha-do-tempo', 'manuscrito', 'biografia', 'local'] as const
 export type TipoDoc = (typeof TIPOS)[number]
 
 export const STATUS = ['rascunho', 'canonico'] as const
@@ -32,6 +32,7 @@ export const ROTULO_TIPO: Record<TipoDoc, string> = {
   'linha-do-tempo': 'Linha do tempo',
   manuscrito: 'Manuscrito',
   biografia: 'Biografia',
+  local: 'Local',
 }
 
 export const ROTULO_STATUS: Record<StatusDoc, string> = {
@@ -55,6 +56,8 @@ export interface Documento {
   ordem: number
   tipo: TipoDoc
   tags: string[]
+  /** Outros nomes pelos quais [[wikilinks]] encontram este documento (ex.: "Longbridge"). */
+  apelidos: string[]
   status: StatusDoc
   resumo?: string
   /** Data ISO (AAAA-MM-DD) usada em "atualizados recentemente". */
@@ -182,13 +185,13 @@ function lerOpcao<T extends string>(
   return padrao
 }
 
-function lerTags(dados: Record<string, unknown>, avisos: Avisos): string[] {
-  const valor = dados.tags
+function lerLista(dados: Record<string, unknown>, campo: string, avisos: Avisos): string[] {
+  const valor = dados[campo]
   if (valor === undefined || valor === null) return []
   // Aceita tanto `tags: [a, b]` quanto `tags: a, b`.
   const lista = Array.isArray(valor) ? valor : typeof valor === 'string' ? valor.split(',') : null
   if (!lista) {
-    avisos.push('Campo "tags" deveria ser uma lista, ex.: [fortaleza, prisão].')
+    avisos.push(`Campo "${campo}" deveria ser uma lista, ex.: [fortaleza, prisão].`)
     return []
   }
   return lista.map((t) => String(t).trim()).filter(Boolean)
@@ -267,7 +270,8 @@ function criarDocumento(reino: Reino, nome: string, raw: string, arquivo: string
     titulo,
     ordem: lerNumero(dados, 'ordem', avisos) ?? Number.MAX_SAFE_INTEGER,
     tipo: lerOpcao(dados, 'tipo', TIPOS, 'artigo', avisos),
-    tags: lerTags(dados, avisos),
+    tags: lerLista(dados, 'tags', avisos),
+    apelidos: lerLista(dados, 'apelidos', avisos),
     status: lerOpcao(dados, 'status', STATUS, 'rascunho', avisos),
     resumo: lerTexto(dados, 'resumo', avisos),
     atualizado: lerData(dados, 'atualizado', avisos),
