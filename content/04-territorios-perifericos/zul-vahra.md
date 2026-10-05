@@ -15,6 +15,10 @@ Não existe uma única autoridade sobre Zul Vahra. Povos locais, cidades indepen
 
 Para estrangeiros, Zul Vahra é uma terra de riquezas, perigos e segredos.
 
+![[ekchos-capital-de-zul-vahra.jpg|Ekchos, capital de Zul Vahra]]
+
+*Ekchos, capital de Zul Vahra.*
+
 > [!aviso]
 > Expedições relatam a existência de cidades inteiras escondidas sob a vegetação, templos abandonados e estruturas pertencentes a civilizações cuja origem permanece desconhecida.
 >
