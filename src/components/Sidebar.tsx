@@ -16,7 +16,7 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ id, aberta, onFechar, onBuscar, temaControle }: SidebarProps) {
-  const { reino: reinoAtivo } = useParams()
+  const { reino: reinoAtivo, doc: docAtivo } = useParams()
   // Mapa slug → aberto/fechado. Pastas nunca tocadas usam o padrão "aberta".
   const [pastas, setPastas] = usePreferencia<Record<string, boolean>>('pastas', {})
   const estaAberta = (slug: string) => pastas[slug] ?? true
@@ -65,13 +65,45 @@ export default function Sidebar({ id, aberta, onFechar, onBuscar, temaControle }
                       {reino.rotulo === ROTULO_PADRAO ? 'Sobre o reino' : 'Apresentação'}
                     </NavLink>
                   </li>
-                  {reino.documentos.map((doc) => (
+                  {reino.soltos.map((doc) => (
                     <li key={doc.id}>
                       <NavLink to={doc.caminho} className="arvore__doc" onClick={onFechar}>
                         {doc.titulo}
                       </NavLink>
                     </li>
                   ))}
+                  {reino.secoes.map((secao) => {
+                    const chave = `${reino.slug}/${secao.pasta}`
+                    // Seções começam fechadas (podem ter dezenas de itens), exceto a do documento aberto.
+                    const contemAtivo =
+                      reino.slug === reinoAtivo && secao.documentos.some((d) => d.slug === docAtivo)
+                    const secaoAberta = pastas[chave] ?? contemAtivo
+                    const secaoId = `secao-${reino.slug}-${secao.pasta}`
+                    return (
+                      <li key={secao.pasta} className="arvore__secao">
+                        <button
+                          type="button"
+                          className="arvore__secao-botao"
+                          aria-expanded={secaoAberta}
+                          aria-controls={secaoId}
+                          onClick={() => setPastas((p) => ({ ...p, [chave]: !secaoAberta }))}
+                        >
+                          <IconeChevron className="arvore__chevron" />
+                          <span>{secao.nome}</span>
+                          <span className="arvore__contagem">{secao.documentos.length}</span>
+                        </button>
+                        <ul id={secaoId} hidden={!secaoAberta}>
+                          {secao.documentos.map((doc) => (
+                            <li key={doc.id}>
+                              <NavLink to={doc.caminho} className="arvore__doc" onClick={onFechar}>
+                                {doc.titulo}
+                              </NavLink>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    )
+                  })}
                 </ul>
               </li>
             )

@@ -10,7 +10,10 @@
  *   - pasta   `01-farlands/`   → reino com slug `farlands` (prefixo numérico é só ordenação)
  *   - arquivo `_reino.md`      → metadados do reino (o corpo vira a introdução da página do reino)
  *   - arquivo `arhto-keim.md`  → documento com slug `arhto-keim`
- *   - arquivos iniciados por `_` (além de `_reino.md`) são ignorados: servem de rascunho oculto
+ *   - subpasta `botanica/`     → seção dentro do reino (grupo recolhível na sidebar); o endereço
+ *                                dos documentos continua `/farlands/<documento>`
+ *   - arquivo `_secao.md`      → nome e ordem da seção (opcional)
+ *   - demais arquivos iniciados por `_` são ignorados: servem de rascunho ou modelo oculto
  */
 import { separarFrontmatter } from './frontmatter'
 import { normalizar, slugificar, tituloDoArquivo } from './text'
@@ -19,7 +22,7 @@ import { normalizar, slugificar, tituloDoArquivo } from './text'
 // Tipos
 // ---------------------------------------------------------------------------
 
-export const TIPOS = ['artigo', 'visao-geral', 'relatorio', 'linha-do-tempo', 'manuscrito', 'biografia', 'local'] as const
+export const TIPOS = ['artigo', 'visao-geral', 'relatorio', 'linha-do-tempo', 'manuscrito', 'biografia', 'local', 'especie'] as const
 export type TipoDoc = (typeof TIPOS)[number]
 
 export const STATUS = ['rascunho', 'canonico'] as const
@@ -33,6 +36,7 @@ export const ROTULO_TIPO: Record<TipoDoc, string> = {
   manuscrito: 'Manuscrito',
   biografia: 'Biografia',
   local: 'Local',
+  especie: 'Espécie',
 }
 
 export const ROTULO_STATUS: Record<StatusDoc, string> = {
@@ -52,6 +56,10 @@ export interface Documento {
   caminho: string
   /** Caminho do arquivo-fonte, útil nos avisos. */
   arquivo: string
+  /** Pasta do arquivo dentro de content/ (ex.: `01-farlands/botanica`); base das imagens relativas. */
+  pasta: string
+  /** Subpasta do reino em que o documento está, se houver (ex.: `botanica`). */
+  secao?: string
   titulo: string
   ordem: number
   tipo: TipoDoc
@@ -70,6 +78,14 @@ export interface Documento {
   avisos: string[]
 }
 
+/** Grupo de documentos dentro de um reino, criado por uma subpasta. */
+export interface Secao {
+  pasta: string
+  nome: string
+  ordem: number
+  documentos: Documento[]
+}
+
 export interface Reino {
   slug: string
   pasta: string
@@ -83,7 +99,11 @@ export interface Reino {
   rotulo: string
   ordem: number
   introducao: string
+  /** Todos os documentos do reino, inclusive os que estão em seções. */
   documentos: Documento[]
+  /** Documentos direto na pasta do reino, fora de qualquer seção. */
+  soltos: Documento[]
+  secoes: Secao[]
   avisos: string[]
 }
 
@@ -210,15 +230,19 @@ function lerData(dados: Record<string, unknown>, campo: string, avisos: Avisos):
 // Construção do índice (roda uma única vez, quando o módulo é carregado)
 // ---------------------------------------------------------------------------
 
-/** "/content/01-farlands/arhto-keim.md" → ["01-farlands", "arhto-keim"] */
-function partesDoCaminho(caminho: string): [pasta: string, nome: string] | null {
+/**
+ * "/content/01-farlands/arhto-keim.md"        → ["01-farlands", "arhto-keim", undefined]
+ * "/content/01-farlands/botanica/musgo.md"    → ["01-farlands", "musgo", "botanica"]
+ * Só o primeiro nível de subpasta vira seção; níveis mais fundos caem na mesma seção.
+ */
+function partesDoCaminho(caminho: string): [pasta: string, nome: string, secao: string | undefined] | null {
   const relativo = caminho.replace(/^\/content\//, '')
   const partes = relativo.split('/')
   // Arquivos soltos na raiz de content/ não pertencem a nenhum reino.
   if (partes.length < 2) return null
   const pasta = partes[0]!
   const nome = partes[partes.length - 1]!.replace(/\.md$/i, '')
-  return [pasta, nome]
+  return [pasta, nome, partes.length > 2 ? partes[1] : undefined]
 }
 
 function criarReino(pasta: string): Reino {
@@ -235,6 +259,8 @@ function criarReino(pasta: string): Reino {
     ordem: prefixo ? Number(prefixo) : Number.MAX_SAFE_INTEGER,
     introducao: '',
     documentos: [],
+    soltos: [],
+    secoes: [],
     avisos: [],
   }
 }
@@ -250,7 +276,7 @@ function aplicarMetadadosDoReino(reino: Reino, raw: string, arquivo: string): vo
   reino.avisos.push(...avisos.map((a) => `${arquivo}: ${a}`))
 }
 
-function criarDocumento(reino: Reino, nome: string, raw: string, arquivo: string): Documento {
+function criarDocumento(reino: Reino, nome: string, raw: string, arquivo: string, secao?: string): Documento {
   const { dados, corpo, erro } = separarFrontmatter(raw)
   const avisos: Avisos = erro ? [erro] : []
 
@@ -267,6 +293,8 @@ function criarDocumento(reino: Reino, nome: string, raw: string, arquivo: string
     reinoSlug: reino.slug,
     caminho: `/${reino.slug}/${slug}`,
     arquivo,
+    pasta: arquivo.replace(/^\/content\//, '').replace(/\/[^/]+$/, ''),
+    secao,
     titulo,
     ordem: lerNumero(dados, 'ordem', avisos) ?? Number.MAX_SAFE_INTEGER,
     tipo: lerOpcao(dados, 'tipo', TIPOS, 'artigo', avisos),
@@ -284,6 +312,31 @@ function criarDocumento(reino: Reino, nome: string, raw: string, arquivo: string
 /** Ordem pelo campo `ordem`; empate → alfabética, respeitando acentos do português. */
 function comparar(a: { ordem: number; nome: string }, b: { ordem: number; nome: string }): number {
   return a.ordem - b.ordem || a.nome.localeCompare(b.nome, 'pt-BR', { sensitivity: 'base' })
+}
+
+function obterSecao(reino: Reino, pasta: string): Secao {
+  let secao = reino.secoes.find((s) => s.pasta === pasta)
+  if (!secao) {
+    const semPrefixo = pasta.replace(/^\d+[-_.\s]*/, '')
+    const prefixo = /^(\d+)/.exec(pasta)?.[1]
+    // Valores provisórios; substituídos pelo _secao.md quando existir.
+    secao = {
+      pasta,
+      nome: tituloDoArquivo(semPrefixo || pasta),
+      ordem: prefixo ? Number(prefixo) : Number.MAX_SAFE_INTEGER,
+      documentos: [],
+    }
+    reino.secoes.push(secao)
+  }
+  return secao
+}
+
+function aplicarMetadadosDaSecao(secao: Secao, raw: string, arquivo: string, reino: Reino): void {
+  const { dados, erro } = separarFrontmatter(raw)
+  const avisos: Avisos = erro ? [erro] : []
+  secao.nome = lerTexto(dados, 'nome', avisos) ?? secao.nome
+  secao.ordem = lerNumero(dados, 'ordem', avisos) ?? secao.ordem
+  reino.avisos.push(...avisos.map((a) => `${arquivo}: ${a}`))
 }
 
 function construirIndice(): Reino[] {
@@ -306,14 +359,19 @@ function construirIndice(): Reino[] {
       console.warn(`[conteúdo] Ignorado (fora de uma pasta de reino): ${arquivo}`)
       continue
     }
-    const [pasta, nome] = partes
+    const [pasta, nome, secao] = partes
     const reino = obterReino(pasta)
 
-    if (nome === '_reino') {
+    if (nome === '_reino' && !secao) {
       aplicarMetadadosDoReino(reino, raw, arquivo)
       comMetadados.add(pasta)
+    } else if (nome === '_secao' && secao) {
+      aplicarMetadadosDaSecao(obterSecao(reino, secao), raw, arquivo, reino)
     } else if (!nome.startsWith('_')) {
-      reino.documentos.push(criarDocumento(reino, nome, raw, arquivo))
+      const doc = criarDocumento(reino, nome, raw, arquivo, secao)
+      reino.documentos.push(doc)
+      if (secao) obterSecao(reino, secao).documentos.push(doc)
+      else reino.soltos.push(doc)
     }
   }
 
@@ -322,7 +380,13 @@ function construirIndice(): Reino[] {
     if (!comMetadados.has(reino.pasta)) {
       reino.avisos.push(`A pasta "${reino.pasta}" não tem _reino.md; usando o nome da pasta.`)
     }
-    reino.documentos.sort((a, b) => comparar({ ordem: a.ordem, nome: a.titulo }, { ordem: b.ordem, nome: b.titulo }))
+    const porOrdem = (a: Documento, b: Documento) =>
+      comparar({ ordem: a.ordem, nome: a.titulo }, { ordem: b.ordem, nome: b.titulo })
+    reino.documentos.sort(porOrdem)
+    reino.soltos.sort(porOrdem)
+    // Seções só com _secao.md (sem documentos) não aparecem.
+    reino.secoes = reino.secoes.filter((s) => s.documentos.length > 0).sort(comparar)
+    for (const secao of reino.secoes) secao.documentos.sort(porOrdem)
     garantirSlugsUnicos(reino)
   }
 
@@ -383,6 +447,11 @@ export function encontrarReino(slug: string): Reino | undefined {
 
 export function encontrarDocumento(reinoSlug: string, slug: string): Documento | undefined {
   return documentoPorId.get(`${reinoSlug}/${slug}`)
+}
+
+/** Seção (subpasta) a que o documento pertence, se houver. */
+export function secaoDe(doc: Documento): Secao | undefined {
+  return doc.secao ? reinoDe(doc).secoes.find((s) => s.pasta === doc.secao) : undefined
 }
 
 export function reinoDe(doc: Documento): Reino {

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import { encontrarDocumento, reinoDe, ROTULO_STATUS, ROTULO_TIPO, type Documento } from '../lib/content'
+import { encontrarDocumento, reinoDe, secaoDe, ROTULO_STATUS, ROTULO_TIPO, type Documento } from '../lib/content'
 import Markdown from './Markdown'
 import ReportHeader from './ReportHeader'
 import TableOfContents from './TableOfContents'
@@ -33,6 +33,7 @@ export default function DocView() {
 
 function Artigo({ doc }: { doc: Documento }) {
   const reino = reinoDe(doc)
+  const secao = secaoDe(doc)
   const corpoRef = useRef<HTMLDivElement>(null)
 
   return (
@@ -43,6 +44,7 @@ function Artigo({ doc }: { doc: Documento }) {
             <li>
               <Link to={reino.caminho}>{reino.nome}</Link>
             </li>
+            {secao && <li>{secao.nome}</li>}
             <li aria-current="page">{doc.titulo}</li>
           </ol>
         </nav>
@@ -60,7 +62,7 @@ function Artigo({ doc }: { doc: Documento }) {
         {doc.avisos.length > 0 && <Avisos avisos={doc.avisos} arquivo={doc.arquivo} />}
 
         <div className="artigo__corpo prosa" ref={corpoRef}>
-          <Markdown fonte={doc.corpo} pasta={reino.pasta} />
+          <Markdown fonte={doc.corpo} pasta={doc.pasta} />
         </div>
 
         <Backlinks caminho={doc.caminho} />

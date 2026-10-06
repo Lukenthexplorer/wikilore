@@ -1500,3 +1500,46 @@ kbd {
     object-position: 50% 22%;
   }
 }
+
+/* ── Seções dentro de um reino (subpastas, ex.: Botânica) ──────────── */
+
+.arvore__secao-botao {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-2);
+  width: 100%;
+  margin-left: -1px;
+  padding: var(--esp-1) var(--esp-3);
+  font-size: 0.9875rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--texto-suave);
+  background: none;
+  border: 0;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+}
+
+.arvore__secao-botao:hover {
+  color: var(--link);
+}
+
+.arvore__secao-botao .arvore__chevron {
+  margin-top: 0;
+}
+
+.arvore__secao-botao[aria-expanded='true'] .arvore__chevron {
+  transform: rotate(90deg);
+}
+
+.arvore__contagem {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-variant-numeric: lining-nums;
+}
+
+.arvore__secao > ul {
+  margin-left: var(--esp-4);
+  border-left: 1px solid var(--borda);
+}

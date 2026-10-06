@@ -22,7 +22,7 @@ npm run preview   # serve o dist/ localmente para conferir o build
    |--------------|:-----------:|---------------------------------------|------------|
    | `titulo`     | sim         | `Guarda Imperial`                     | Use aspas se tiver `:` → `"Relatório: X"` |
    | `ordem`      |             | `5`                                   | Posição na sidebar; empate → ordem alfabética |
-   | `tipo`       |             | `artigo`                              | `artigo`, `visao-geral`, `relatorio`, `linha-do-tempo`, `manuscrito`, `biografia`, `local` |
+   | `tipo`       |             | `artigo`                              | `artigo`, `visao-geral`, `relatorio`, `linha-do-tempo`, `manuscrito`, `biografia`, `local`, `especie` |
    | `apelidos`   |             | `[Longbridge]`                        | Outros nomes que `[[links]]` aceitam para este documento |
    | `tags`       |             | `[militar, capital]`                  | Entram na busca |
    | `status`     |             | `rascunho`                            | `rascunho` ou `canônico` |
@@ -56,6 +56,15 @@ npm run preview   # serve o dist/ localmente para conferir o build
    ```
 
 3. Adicione documentos como na receita 1. Pronto: o reino aparece na sidebar e na capa.
+
+### Seções dentro de um reino
+
+Para agrupar muitos documentos do mesmo assunto (ex.: as plantas de Farlands), crie uma **subpasta**
+dentro do reino: `content/01-farlands/botanica/`. Ela vira um grupo recolhível na sidebar.
+
+- O endereço não muda: `content/01-farlands/botanica/musgo.md` → `/farlands/musgo`.
+- Opcional: um `_secao.md` na subpasta define o nome e a posição do grupo (`nome: Botânica`, `ordem: 1`).
+- Arquivos começados por `_` (como `_modelo-especie.md`) ficam ocultos: servem de modelo para copiar.
 
 ## Receita 3 — Recursos de Markdown
 

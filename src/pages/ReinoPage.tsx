@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { encontrarReino, ROTULO_TIPO } from '../lib/content'
+import { encontrarReino, ROTULO_TIPO, type Documento } from '../lib/content'
 import Markdown from '../components/Markdown'
 import NotFound from './NotFound'
 
@@ -30,24 +30,30 @@ export default function ReinoPage() {
         </div>
       )}
 
-      <section aria-labelledby="docs-reino">
-        <h2 id="docs-reino" className="secao-titulo">Documentos</h2>
-        {reino.documentos.length === 0 ? (
-          <p className="vazio">Nenhum documento aqui ainda.</p>
-        ) : (
-          <ol className="lista-docs">
-            {reino.documentos.map((doc) => (
-              <li key={doc.id}>
-                <Link to={doc.caminho} className="lista-docs__titulo">
-                  {doc.titulo}
-                </Link>
-                <span className="lista-docs__tipo">{ROTULO_TIPO[doc.tipo]}</span>
-                {doc.resumo && <p className="lista-docs__resumo">{doc.resumo}</p>}
-              </li>
-            ))}
-          </ol>
-        )}
-      </section>
+      {reino.documentos.length === 0 && <p className="vazio">Nenhum documento aqui ainda.</p>}
+      {reino.soltos.length > 0 && <ListaDeDocumentos id="docs-reino" titulo="Documentos" documentos={reino.soltos} />}
+      {reino.secoes.map((secao) => (
+        <ListaDeDocumentos key={secao.pasta} id={`docs-${secao.pasta}`} titulo={secao.nome} documentos={secao.documentos} />
+      ))}
     </div>
+  )
+}
+
+function ListaDeDocumentos({ id, titulo, documentos }: { id: string; titulo: string; documentos: Documento[] }) {
+  return (
+    <section aria-labelledby={id}>
+      <h2 id={id} className="secao-titulo">{titulo}</h2>
+      <ol className="lista-docs">
+        {documentos.map((doc) => (
+          <li key={doc.id}>
+            <Link to={doc.caminho} className="lista-docs__titulo">
+              {doc.titulo}
+            </Link>
+            <span className="lista-docs__tipo">{ROTULO_TIPO[doc.tipo]}</span>
+            {doc.resumo && <p className="lista-docs__resumo">{doc.resumo}</p>}
+          </li>
+        ))}
+      </ol>
+    </section>
   )
 }
