@@ -13,7 +13,7 @@ atualizado: 2026-10-05
 # Botânica de Farlands
 Região: [[Farlands]]
 Zonas: Terras de Fronteira, Montanhas Brancas, Terras do Gelo Profundo
-Espécies catalogadas: 2
+Espécies catalogadas: 8
 Estudada por: [a definir]
 ```
 
@@ -52,6 +52,12 @@ As três zonas vêm da geografia já registrada; a vegetação de cada uma está
 |---------|------|------|---------------|
 | [[Árvore de Thyr]] | Árvore conífera | Terras de Fronteira e limite das Terras do Gelo Profundo | Orientação, madeira e localização de água subterrânea |
 | [[Musgo-Pulmão]] | Organismo colonial | Terras do Gelo Profundo | Isolamento térmico |
+| [[Raiz de Brasa]] | Erva de roseta com raiz bulbosa | Ao norte do Musgo-Pulmão | Alimento e fonte de calor |
+| [[Coroa de Sangue]] | Planta baixa colonial | [a definir] | [a definir] |
+| [[Dedo-do-Gelo]] | [a definir] | [a definir] | [a definir] |
+| [[Olho de Farlands]] | Planta bulbosa | [a definir] | [a definir] |
+| [[Mandíbula Branca]] | Planta carnívora | Norte profundo | [a definir] |
+| [[Coluna de Veyr]] | [a definir] | Regiões onde a flora de Farlands começa a parecer completamente alienígena | [a definir] |
 
 ## Usos
 
