@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './styles/tokens.css'
 import './styles/global.css'
+import './styles/ambientes.css'
 
 // BASE_URL vem do `base` do Vite ("/" ou "/velha-era/" no GitHub Pages).
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || undefined

@@ -37,7 +37,7 @@ function Artigo({ doc }: { doc: Documento }) {
   const corpoRef = useRef<HTMLDivElement>(null)
 
   return (
-    <div className="documento">
+    <div className="documento" data-ambiente={secao?.ambiente}>
       <article className="artigo" aria-labelledby="titulo-doc">
         <nav className="trilha" aria-label="Trilha">
           <ol>

@@ -80,7 +80,7 @@ export default function Sidebar({ id, aberta, onFechar, onBuscar, temaControle }
                     const secaoAberta = pastas[chave] ?? contemAtivo
                     const secaoId = `secao-${reino.slug}-${secao.pasta}`
                     return (
-                      <li key={secao.pasta} className="arvore__secao">
+                      <li key={secao.pasta} className="arvore__secao" data-ambiente={secao.ambiente}>
                         <button
                           type="button"
                           className="arvore__secao-botao"

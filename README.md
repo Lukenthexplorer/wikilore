@@ -64,6 +64,8 @@ dentro do reino: `content/01-farlands/botanica/`. Ela vira um grupo recolhível 
 
 - O endereço não muda: `content/01-farlands/botanica/musgo.md` → `/farlands/musgo`.
 - Opcional: um `_secao.md` na subpasta define o nome e a posição do grupo (`nome: Botânica`, `ordem: 1`).
+- Opcional: `ambiente: musgo` no `_secao.md` dá às páginas da seção uma identidade visual própria
+  (paleta, ornamentos e fundo definidos em `src/styles/ambientes.css`).
 - Arquivos começados por `_` (como `_modelo-especie.md`) ficam ocultos: servem de modelo para copiar.
 
 ## Receita 3 — Recursos de Markdown

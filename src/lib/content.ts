@@ -12,7 +12,7 @@
  *   - arquivo `arhto-keim.md`  → documento com slug `arhto-keim`
  *   - subpasta `botanica/`     → seção dentro do reino (grupo recolhível na sidebar); o endereço
  *                                dos documentos continua `/farlands/<documento>`
- *   - arquivo `_secao.md`      → nome e ordem da seção (opcional)
+ *   - arquivo `_secao.md`      → nome, ordem e ambiente visual da seção (opcional)
  *   - demais arquivos iniciados por `_` são ignorados: servem de rascunho ou modelo oculto
  */
 import { separarFrontmatter } from './frontmatter'
@@ -83,6 +83,8 @@ export interface Secao {
   pasta: string
   nome: string
   ordem: number
+  /** Identidade visual opcional das páginas da seção (ex.: `musgo`); vira `data-ambiente` no documento. */
+  ambiente?: string
   documentos: Documento[]
 }
 
@@ -336,6 +338,8 @@ function aplicarMetadadosDaSecao(secao: Secao, raw: string, arquivo: string, rei
   const avisos: Avisos = erro ? [erro] : []
   secao.nome = lerTexto(dados, 'nome', avisos) ?? secao.nome
   secao.ordem = lerNumero(dados, 'ordem', avisos) ?? secao.ordem
+  const ambiente = lerTexto(dados, 'ambiente', avisos)
+  secao.ambiente = ambiente ? slugificar(ambiente) : undefined
   reino.avisos.push(...avisos.map((a) => `${arquivo}: ${a}`))
 }
 

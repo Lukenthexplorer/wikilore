@@ -1,0 +1,228 @@
+/*
+ * Ambientes: identidade visual própria de uma seção do arquivo.
+ *
+ * Uma seção ganha ambiente com `ambiente: <nome>` no seu _secao.md; o documento
+ * recebe `data-ambiente="<nome>"` e aqui só se redefinem os tokens dentro dele.
+ * As cores usam light-dark(), então cada valor já cobre o papel e a luz de vela
+ * (o color-scheme vem de tokens.css).
+ *
+ * Tokens derivados (--link, --filete, --borda…) são resolvidos onde foram
+ * declarados, por isso precisam ser redeclarados aqui junto com a paleta.
+ */
+
+/* ═══ Musgo: Botânica de Farlands ═════════════════════════════════════ */
+
+[data-ambiente='musgo'] {
+  --papel: light-dark(#e3e5cd, #141a14);
+  --musgo: light-dark(#56743a, #7f9d55);        /* decorativo: filetes, ramos, capitular */
+  --musgo-claro: light-dark(#9caf78, #4f6a36);  /* bordas sutis, hover */
+  --musgo-fundo: light-dark(#cfd8b0, #233021);  /* manchas de musgo atrás do texto */
+  --liquen: light-dark(#b9b98a, #3b4a33);       /* pintas de líquen */
+
+  --bronze: var(--musgo);
+  --bronze-claro: var(--musgo-claro);
+  /* Texto verde: ~6,6:1 sobre o papel claro e ~8:1 sobre o escuro. */
+  --bronze-texto: light-dark(#3a5525, #a9c47e);
+
+  --fundo: var(--papel);
+  --fundo-elevado: light-dark(#eceedb, #1b231a);
+  --texto: light-dark(#1f281c, #dde4cb);
+  --texto-suave: light-dark(#4b5843, #a3b190);
+  --link: var(--bronze-texto);
+  --link-hover: light-dark(#121a10, #f0f5de);
+  --filete: var(--musgo);
+  --borda: color-mix(in srgb, var(--musgo-claro) 60%, transparent);
+  --borda-forte: var(--musgo-claro);
+  --nota-tinta: var(--bronze-texto);
+  --nota-fundo: color-mix(in srgb, var(--musgo-claro) 18%, var(--papel));
+  --sombra: 0 1px 2px rgb(20 30 15 / 0.1), 0 12px 32px -12px rgb(20 30 15 / 0.35);
+
+  /* Ramo de samambaia, usado como máscara: a cor vem de background-color. */
+  --ramo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 21'%3E%3Cg fill='black'%3E%3Cpath d='M1 10.5C30 10.2 58 9.6 79 8.6' stroke='black' stroke-width='1.1' fill='none' stroke-linecap='round'/%3E%3Cellipse cx='6.0' cy='6.8' rx='4.4' ry='2.0' transform='rotate%28-58 6.0 6.8%29'/%3E%3Cellipse cx='6.0' cy='14.0' rx='4.4' ry='2.0' transform='rotate%2858 6.0 14.0%29'/%3E%3Cellipse cx='13.4' cy='6.9' rx='4.0' ry='1.8' transform='rotate%28-58 13.4 6.9%29'/%3E%3Cellipse cx='13.4' cy='13.5' rx='4.0' ry='1.8' transform='rotate%2858 13.4 13.5%29'/%3E%3Cellipse cx='20.9' cy='7.0' rx='3.7' ry='1.7' transform='rotate%28-58 20.9 7.0%29'/%3E%3Cellipse cx='20.9' cy='13.0' rx='3.7' ry='1.7' transform='rotate%2858 20.9 13.0%29'/%3E%3Cellipse cx='28.3' cy='7.1' rx='3.3' ry='1.5' transform='rotate%28-58 28.3 7.1%29'/%3E%3Cellipse cx='28.3' cy='12.5' rx='3.3' ry='1.5' transform='rotate%2858 28.3 12.5%29'/%3E%3Cellipse cx='35.8' cy='7.2' rx='3.0' ry='1.4' transform='rotate%28-58 35.8 7.2%29'/%3E%3Cellipse cx='35.8' cy='12.0' rx='3.0' ry='1.4' transform='rotate%2858 35.8 12.0%29'/%3E%3Cellipse cx='43.2' cy='7.2' rx='2.6' ry='1.2' transform='rotate%28-58 43.2 7.2%29'/%3E%3Cellipse cx='43.2' cy='11.6' rx='2.6' ry='1.2' transform='rotate%2858 43.2 11.6%29'/%3E%3Cellipse cx='50.6' cy='7.3' rx='2.3' ry='1.0' transform='rotate%28-58 50.6 7.3%29'/%3E%3Cellipse cx='50.6' cy='11.1' rx='2.3' ry='1.0' transform='rotate%2858 50.6 11.1%29'/%3E%3Cellipse cx='58.1' cy='7.4' rx='1.9' ry='0.9' transform='rotate%28-58 58.1 7.4%29'/%3E%3Cellipse cx='58.1' cy='10.6' rx='1.9' ry='0.9' transform='rotate%2858 58.1 10.6%29'/%3E%3Cellipse cx='65.5' cy='7.5' rx='1.6' ry='0.7' transform='rotate%28-58 65.5 7.5%29'/%3E%3Cellipse cx='65.5' cy='10.1' rx='1.6' ry='0.7' transform='rotate%2858 65.5 10.1%29'/%3E%3Cellipse cx='73.0' cy='7.6' rx='1.2' ry='0.6' transform='rotate%28-58 73.0 7.6%29'/%3E%3Cellipse cx='73.0' cy='9.6' rx='1.2' ry='0.6' transform='rotate%2858 73.0 9.6%29'/%3E%3C/g%3E%3C/svg%3E");
+
+  /* Manchas de musgo: ruído fractal de baixa frequência com o alfa recortado em limiar. */
+  --manchas: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.016' numOctaves='5' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 -2.55'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E");
+  /* Pintas de líquen: o mesmo truque, em frequência alta. */
+  --pintas: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.11' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 -5.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+}
+
+/* ── Fundo: papel esverdeado com musgo crescendo do alto da página ──── */
+
+.documento[data-ambiente='musgo'] {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  color: var(--texto);
+  background-color: var(--fundo);
+  background-image:
+    radial-gradient(ellipse 90% 40% at 50% 0%, color-mix(in srgb, var(--musgo) 14%, transparent), transparent 70%),
+    var(--textura);
+}
+
+.documento[data-ambiente='musgo']::before,
+.documento[data-ambiente='musgo']::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+/* Tapete de musgo, mais denso no topo e sumindo antes do texto corrido. */
+.documento[data-ambiente='musgo']::before {
+  height: 26rem;
+  background-color: var(--musgo-fundo);
+  -webkit-mask-image: var(--manchas), linear-gradient(#000, #0008 30%, transparent);
+  mask-image: var(--manchas), linear-gradient(#000, #0008 30%, transparent);
+}
+
+/* Pintas de líquen espalhadas pelas bordas laterais. */
+.documento[data-ambiente='musgo']::after {
+  bottom: 0;
+  background-color: var(--liquen);
+  -webkit-mask-image: var(--pintas), linear-gradient(90deg, #000, transparent 18%, transparent 82%, #000);
+  mask-image: var(--pintas), linear-gradient(90deg, #000, transparent 18%, transparent 82%, #000);
+  opacity: 0.55;
+}
+
+[data-ambiente='musgo'] ::selection {
+  background: color-mix(in srgb, var(--musgo-claro) 50%, transparent);
+}
+
+[data-ambiente='musgo'] :focus-visible {
+  outline-color: var(--bronze-texto);
+}
+
+/* ── Cabeçalho: o filete reto vira um ramo de samambaia ─────────────── */
+
+[data-ambiente='musgo'] .artigo__cabecalho {
+  position: relative;
+  padding-bottom: var(--esp-6);
+  border-bottom: 0;
+  /* Filete dividido ao meio, deixando espaço para os ramos. */
+  background:
+    linear-gradient(var(--borda), var(--borda)) left bottom 10px / calc(50% - 5rem) 1px no-repeat,
+    linear-gradient(var(--borda), var(--borda)) right bottom 10px / calc(50% - 5rem) 1px no-repeat;
+}
+
+/* Dois ramos de samambaia nascendo do centro, um espelhado. */
+[data-ambiente='musgo'] .artigo__cabecalho::before,
+[data-ambiente='musgo'] .artigo__cabecalho::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 4.5rem;
+  height: 21px;
+  background-color: var(--musgo);
+  -webkit-mask: var(--ramo) center / contain no-repeat;
+  mask: var(--ramo) center / contain no-repeat;
+}
+
+[data-ambiente='musgo'] .artigo__cabecalho::before {
+  left: 50%;
+}
+
+[data-ambiente='musgo'] .artigo__cabecalho::after {
+  right: 50%;
+  scale: -1 1;
+}
+
+[data-ambiente='musgo'] .artigo__titulo {
+  color: light-dark(#26341f, #e4ecd0);
+}
+
+/* Títulos de seção: um raminho no lugar do traço. */
+[data-ambiente='musgo'] .prosa h2::after {
+  width: 5rem;
+  height: 1.3rem;
+  margin-top: 0.25em;
+  border-top: 0;
+  background-color: var(--musgo);
+  -webkit-mask: var(--ramo) left / contain no-repeat;
+  mask: var(--ramo) left / contain no-repeat;
+}
+
+[data-ambiente='musgo'] .prosa h3 {
+  color: light-dark(#2f4223, #cfdcb4);
+}
+
+/* Capitular cor de musgo, sobre uma pequena mancha. */
+[data-ambiente='musgo'] .artigo__corpo > p:first-of-type::first-letter {
+  color: var(--musgo);
+  text-shadow: 0 0 0.35em color-mix(in srgb, var(--musgo) 25%, transparent);
+}
+
+[data-ambiente='musgo'] .prosa blockquote {
+  border-left: 3px double var(--musgo-claro);
+}
+
+/* ── Ficha: etiqueta de herbário ────────────────────────────────────── */
+
+[data-ambiente='musgo'] .infobox {
+  border: 1px solid var(--borda-forte);
+  border-top: 0;
+  outline: 1px solid var(--borda);
+  outline-offset: 3px;
+  box-shadow: var(--sombra);
+}
+
+[data-ambiente='musgo'] .infobox__titulo {
+  position: relative;
+  padding-top: var(--esp-3);
+  color: light-dark(#f2f5e6, #e8efd6);
+  background-color: light-dark(#4d6935, #34482a);
+  background-image: var(--textura);
+  border-bottom: 0;
+}
+
+[data-ambiente='musgo'] .infobox__imagem img {
+  border-color: var(--borda-forte);
+  background: var(--papel);
+}
+
+[data-ambiente='musgo'] .infobox dl > div + div {
+  border-top-style: dotted;
+}
+
+/* ── Imagens soltas no texto: pranchas presas no caderno de campo ──── */
+
+[data-ambiente='musgo'] .prosa .imagem img {
+  padding: var(--esp-2);
+  background: var(--fundo-elevado);
+  border-color: var(--borda-forte);
+}
+
+/* ── Sidebar: a seção ganha um pequeno ramo e um fio verde ──────────── */
+
+.arvore__secao[data-ambiente='musgo'] {
+  --musgo: light-dark(#56743a, #8fae63);
+  --ramo-sidebar: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 14C5 9 8 5 14 2C13 8 9 12 3 14Z M3 14L9 7' fill='black' stroke='black' stroke-width='.6'/%3E%3C/svg%3E");
+}
+
+.arvore__secao[data-ambiente='musgo'] > .arvore__secao-botao::after {
+  content: '';
+  order: 2;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--musgo);
+  -webkit-mask: var(--ramo-sidebar) center / contain no-repeat;
+  mask: var(--ramo-sidebar) center / contain no-repeat;
+}
+
+.arvore__secao[data-ambiente='musgo'] > .arvore__secao-botao > span:first-of-type {
+  order: 1;
+}
+
+.arvore__secao[data-ambiente='musgo'] > .arvore__secao-botao > .arvore__contagem {
+  order: 3;
+}
+
+.arvore__secao[data-ambiente='musgo'] > .arvore__secao-botao[aria-expanded='true'] {
+  color: var(--musgo);
+}
+
+.arvore__secao[data-ambiente='musgo'] > ul {
+  border-left-color: color-mix(in srgb, var(--musgo) 55%, transparent);
+}
