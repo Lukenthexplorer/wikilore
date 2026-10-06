@@ -14,197 +14,203 @@ atualizado: 2026-10-06
 Região: [[Farlands]]
 Zonas: Terras de Fronteira, Montanhas Brancas, Terras do Gelo Profundo, Cavernas
 Espécies catalogadas: 8
-Estudada por: [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]] e estudiosos estrangeiros de instituição ainda não definida
+Principais conhecedores: [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]], exploradores e naturalistas de Isteros
 ```
 
-A **botânica de [[Farlands]]** compreende um conjunto de espécies adaptadas a algumas das condições mais extremas conhecidas na Velha Era.
+A **botânica de [[Farlands]]** compreende algumas das formas de vida vegetal mais extremas conhecidas na Velha Era.
 
 Frio prolongado, solos permanentemente congelados, ventos violentos, longos períodos de baixa luminosidade e estações de crescimento extremamente curtas produziram uma flora profundamente diferente daquela encontrada nas regiões mais temperadas.
 
-Existe, entretanto, uma característica particularmente marcante na distribuição dessa vegetação:
+A característica mais marcante dessa vegetação surge conforme se avança para o norte:
 
-**quanto mais ao norte se avança, menos a flora se parece com a vegetação comum do restante do mundo.**
+**quanto mais ao norte se viaja, menos a flora se parece com a vegetação comum do restante do mundo.**
 
 Nas regiões meridionais ainda existem árvores, arbustos, musgos e líquens facilmente reconhecíveis.
 
-Mais ao norte, começam a surgir organismos capazes de produzir calor, formar enormes redes subterrâneas, absorver matéria orgânica, mover estruturas em resposta ao ambiente ou sobreviver durante meses praticamente sem atividade metabólica.
+Mais ao norte surgem organismos capazes de produzir calor, formar vastas redes subterrâneas, absorver matéria orgânica, movimentar estruturas em resposta ao ambiente e permanecer durante meses em estados metabólicos mínimos.
 
-Nas regiões mais profundas de Farlands, até conceitos aparentemente simples como folha, caule, raiz e flor começam a se tornar insuficientes para descrever algumas espécies.
+Nas partes mais remotas das Terras do Gelo Profundo, até distinções aparentemente simples entre folha, caule, raiz e flor tornam-se difíceis de aplicar.
 
-Apesar de sua aparência por vezes grotesca ou aparentemente impossível, **nenhuma das espécies atualmente catalogadas possui origem mágica conhecida**. Suas características são consideradas adaptações biológicas extremas ao ambiente de Farlands.
+Até onde os naturalistas conseguiram determinar, essas formas de vida não dependem de fenômenos mágicos conhecidos. Suas características são resultado de adaptações extremas às condições de Farlands.
 
-Cada espécie possui seu próprio documento nesta seção.
+## A transformação para o norte
 
-> [!nota] Como adicionar uma espécie
-> 1. Copie `_modelo-especie.md` nesta pasta e renomeie o arquivo, por exemplo, para `musgo-de-cinza.md`.
-> 2. Preencha a ficha e o texto.
-> 3. Acrescente uma linha no [catálogo](#catálogo-de-espécies) abaixo, com o nome entre `[[ ]]`.
->
-> A espécie aparece automaticamente na seção **Botânica** da barra lateral.
+A vegetação de Farlands não muda apenas conforme a altitude ou a temperatura.
 
-## Princípio da progressão setentrional
+Existe uma transformação gradual perceptível à medida que se avança para o norte.
 
-A flora de Farlands não muda apenas por altitude ou temperatura.
+Nas **Terras de Fronteira**, predominam formas reconhecíveis de vegetação.
 
-Existe uma transformação gradual em direção ao norte.
+A [[Árvore de Thyr]], embora extraordinariamente resistente, continua sendo inequivocamente uma árvore.
 
-Nas **Terras de Fronteira**, ainda predominam formas vegetais reconhecíveis.
+Mais adiante aparecem organismos como o [[Musgo-Pulmão]], capaz de formar colônias extensas e utilizar matéria orgânica como fonte complementar de nutrientes.
 
-A [[Árvore de Thyr]], embora extremamente adaptada ao frio, continua sendo claramente uma árvore.
+A [[Raiz de Brasa]] utiliza suas próprias reservas energéticas para produzir calor e impedir o congelamento de seus tecidos internos.
 
-Nas regiões seguintes, organismos como o [[Musgo-Pulmão]] começam a apresentar características incomuns, como enormes colônias interligadas e absorção de matéria orgânica.
+Ainda mais ao norte surgem espécies como o [[Olho de Farlands]], a [[Mandíbula Branca]] e a [[Coluna de Veyr]], cujas estruturas e comportamentos se afastam profundamente da vegetação encontrada em outras regiões.
 
-Mais ao norte, a [[Raiz de Brasa]] utiliza parte de suas reservas energéticas para produzir calor metabólico.
+Viajar para o norte de Farlands significa, portanto, atravessar um verdadeiro **gradiente biológico**.
 
-Depois surgem formas cada vez menos familiares, como o [[Olho de Farlands]], a [[Mandíbula Branca]] e a [[Coluna de Veyr]].
+As últimas [[Árvore de Thyr|Árvores de Thyr]] constituem um dos marcos naturais dessa transição.
 
-Assim, viajar para o norte também significa atravessar uma espécie de **gradiente biológico**.
-
-A última [[Árvore de Thyr]] costuma ser considerada informalmente um dos marcos desse processo.
-
-Além dela, árvores verdadeiras tornam-se praticamente inexistentes.
+Depois delas, árvores verdadeiras tornam-se praticamente inexistentes.
 
 ## Zonas de vegetação
 
 | Zona | Terreno | Vegetação |
 |------|---------|-----------|
-| Terras de Fronteira | Sul de Farlands; clima severo, mas com assentamentos permanentes e rotas relativamente estáveis | Coníferas resistentes, arbustos baixos, musgos, líquens e outras formas ainda semelhantes à flora comum. A [[Árvore de Thyr]] é uma das espécies características das regiões mais frias dessa faixa. |
-| Montanhas Brancas | Picos, desfiladeiros, encostas rochosas e vales estreitos; região associada às grandes minas | Vegetação escassa e concentrada em vales protegidos, fissuras rochosas e áreas onde existe água subterrânea. Árvores tornam-se pequenas, retorcidas e progressivamente raras conforme aumentam altitude e exposição. |
-| Terras do Gelo Profundo | Planícies congeladas, lagos sob gelo espesso, formações rochosas isoladas e regiões de frio extremo | Flora altamente especializada. Predominam organismos rasteiros, subterrâneos, coloniais ou capazes de criar seus próprios microambientes. É nessa região que a vegetação começa a assumir formas progressivamente mais grotescas e incomuns. |
-| Cavernas | Grande rede subterrânea sob as montanhas, parcialmente conhecida e em grande parte inexplorada | Nenhuma flora cavernícola independente foi oficialmente catalogada até o momento. Raízes e filamentos de organismos da superfície podem penetrar profundamente em fissuras e galerias. |
+| Terras de Fronteira | Sul de Farlands; clima severo, com assentamentos permanentes e rotas relativamente estáveis | Coníferas resistentes, arbustos baixos, musgos e líquens. A [[Árvore de Thyr]] aparece nas regiões mais frias dessa faixa. |
+| Montanhas Brancas | Picos, desfiladeiros, encostas rochosas e vales estreitos | Vegetação escassa, concentrada em vales protegidos, fissuras rochosas e locais onde existe água subterrânea. Árvores tornam-se menores e mais retorcidas conforme aumentam a altitude e a exposição. |
+| Terras do Gelo Profundo | Planícies congeladas, lagos cobertos por gelo espesso e formações rochosas isoladas | Flora altamente especializada, dominada por formas rasteiras, subterrâneas, coloniais e organismos capazes de criar pequenos microambientes ao redor de si. |
+| Cavernas | Extensa rede subterrânea sob as montanhas | Predominam raízes, filamentos e prolongamentos de organismos da superfície nas regiões próximas às entradas e fissuras. As galerias profundas permanecem entre os ambientes biologicamente menos conhecidos de Farlands. |
 
 ## Catálogo de espécies
 
-| Espécie | Tipo | Zona | Uso principal |
-|---------|------|------|---------------|
-| [[Árvore de Thyr]] | Árvore conífera | Terras de Fronteira, Montanhas Brancas e limite das Terras do Gelo Profundo | Orientação, madeira e localização de água subterrânea |
-| [[Musgo-Pulmão]] | Organismo colonial fotossintético | Terras do Gelo Profundo | Isolamento térmico e identificação indireta de matéria orgânica enterrada |
-| [[Raiz de Brasa]] | Erva de roseta com grande raiz bulbosa | Terras do Gelo Profundo, além das principais áreas de ocorrência do Musgo-Pulmão | Alimento e fonte temporária de calor |
-| [[Coroa de Sangue]] | Planta baixa colonial de digestão externa | Terras do Gelo Profundo | Nenhum uso humano estabelecido |
-| [[Dedo-do-Gelo]] | Planta geófita de hastes translúcidas | Terras do Gelo Profundo | Nenhum uso humano estabelecido |
-| [[Olho de Farlands]] | Planta bulbosa fotossensível | Terras do Gelo Profundo setentrionais | Nenhum uso humano estabelecido |
-| [[Mandíbula Branca]] | Planta carnívora | Norte profundo das Terras do Gelo Profundo | Nenhum uso humano estabelecido |
-| [[Coluna de Veyr]] | Planta colunar perene | Regiões setentrionais das Terras do Gelo Profundo | Nenhum uso humano estabelecido |
+| Espécie | Tipo | Zona | Utilidade conhecida |
+|---------|------|------|---------------------|
+| [[Árvore de Thyr]] | Árvore conífera | Terras de Fronteira, Montanhas Brancas e limite do Gelo Profundo | Orientação, madeira e localização de água subterrânea |
+| [[Musgo-Pulmão]] | Organismo colonial fotossintético | Terras do Gelo Profundo | Isolamento térmico e identificação de concentrações de matéria orgânica |
+| [[Raiz de Brasa]] | Erva de roseta com grande raiz bulbosa | Terras do Gelo Profundo | Alimento e fonte temporária de calor |
+| [[Coroa de Sangue]] | Planta baixa colonial | Terras do Gelo Profundo | Formação de pequenos refúgios térmicos naturais |
+| [[Dedo-do-Gelo]] | Planta subterrânea de hastes fotocondutoras | Terras do Gelo Profundo | Indicador de regiões com atividade vegetal sob a neve |
+| [[Olho de Farlands]] | Planta bulbosa fotossensível | Terras setentrionais do Gelo Profundo | Sem aproveitamento relevante conhecido |
+| [[Mandíbula Branca]] | Planta carnívora | Norte profundo | Sem aproveitamento relevante conhecido |
+| [[Coluna de Veyr]] | Planta colunar perene | Norte profundo | Sem aproveitamento relevante conhecido |
 
 ## Adaptações ao frio
 
-Não existe uma única estratégia utilizada pela flora de Farlands.
+Não existe uma única estratégia de sobrevivência entre as plantas de Farlands.
 
-Cada linhagem desenvolveu soluções diferentes para sobreviver.
+Diferentes espécies desenvolveram soluções radicalmente distintas para suportar o ambiente.
 
-Entre as adaptações já conhecidas estão:
+Entre as adaptações conhecidas estão:
 
 - crescimento extremamente lento;
-- grande concentração de massa vegetal abaixo da superfície;
-- produção de compostos naturais anticongelantes;
+- concentração da maior parte da massa viva abaixo da superfície;
+- produção de substâncias anticongelantes nos tecidos;
 - armazenamento prolongado de açúcares e nutrientes;
-- redução quase completa do metabolismo durante o inverno;
-- folhas pequenas, escuras ou protegidas por espessas camadas cerosas;
-- utilização da matéria orgânica como complemento à fotossíntese;
-- redes subterrâneas capazes de distribuir nutrientes por grandes distâncias;
+- redução extrema do metabolismo durante os períodos mais severos;
+- folhas pequenas, escuras ou recobertas por grossas camadas protetoras;
+- utilização de matéria orgânica como complemento à fotossíntese;
+- redes subterrâneas capazes de transportar nutrientes por grandes distâncias;
 - produção metabólica de calor;
-- captura e condução da pouca luz disponível;
-- movimentos lentos de estruturas vegetais em resposta à temperatura, luz, pressão ou presença de alimento.
+- estruturas capazes de captar e conduzir luz através da neve;
+- movimentos lentos em resposta a luz, pressão, temperatura ou presença de outros organismos.
 
-Algumas espécies podem permanecer durante meses aparentemente mortas e retomar sua atividade quando as condições voltam a permitir.
+Algumas espécies permanecem durante meses em um estado tão reduzido de atividade que podem parecer mortas até que as condições ambientais melhorem.
 
-## Usos
+## Alimentação
 
-### Alimentação
+A [[Raiz de Brasa]] está entre as plantas mais valiosas de Farlands para alimentação humana.
 
-Entre as espécies atualmente catalogadas, a [[Raiz de Brasa]] possui o uso alimentar mais importante.
+Sua enorme estrutura subterrânea acumula grandes quantidades de carboidratos e pode fornecer uma quantidade considerável de energia.
 
-Sua grande raiz subterrânea armazena uma elevada concentração de carboidratos e pode fornecer enorme quantidade de energia.
+A raiz, entretanto, não deve ser consumida crua.
 
-Ela, porém, **não deve ser consumida crua**.
+Seus tecidos possuem substâncias fortemente irritantes, tradicionalmente reduzidas através de cozimento, fermentação ou imersão prolongada.
 
-Seus tecidos contêm compostos fortemente irritantes, removidos ou reduzidos através de cozimento, fermentação ou períodos prolongados de imersão.
+Nas regiões onde outras fontes de alimento desaparecem durante longos períodos, localizar uma população de Raízes de Brasa pode ser decisivo para a sobrevivência de um viajante.
 
-Outras espécies comestíveis ainda não foram formalmente catalogadas.
+## Materiais
 
-### Medicina
+A madeira da [[Árvore de Thyr]] é densa, resistente, flexível e extraordinariamente durável.
 
-Nenhum uso medicinal específico das espécies atualmente registradas foi estabelecido.
+É utilizada na fabricação de trenós, ferramentas, estruturas e determinadas peças de embarcações.
 
-O conhecimento botânico dos [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]] sugere que outras aplicações podem existir, mas elas ainda precisam ser documentadas.
+Como a espécie pode levar séculos para atingir dimensões consideráveis, os [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]] tradicionalmente aproveitam árvores mortas, galhos quebrados e madeira naturalmente desprendida.
 
-### Materiais e combustível
+O [[Musgo-Pulmão]], depois de seco e tratado, pode servir como material isolante devido à grande quantidade de ar retida entre suas estruturas.
 
-A madeira da [[Árvore de Thyr]] é densa, resistente, flexível e extremamente durável.
+A [[Raiz de Brasa]] recém-retirada do solo permanece metabolicamente ativa por algum tempo e pode continuar liberando calor, sendo utilizada em situações extremas para aquecer pessoas, recipientes ou pequenos espaços protegidos.
 
-Pode ser empregada em trenós, ferramentas, estruturas e determinadas peças de embarcações.
+## Relação com os Arhto-Keim
 
-Devido ao crescimento extraordinariamente lento da espécie, os Arhto-Keim tradicionalmente aproveitam árvores mortas, galhos quebrados e madeira naturalmente desprendida em vez de derrubar exemplares saudáveis.
+Grande parte do conhecimento sobre a vegetação de Farlands antecede os registros estrangeiros.
 
-O [[Musgo-Pulmão]], depois de seco e tratado, pode ser utilizado como material isolante graças à grande quantidade de ar retida em suas estruturas.
+Os [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]] aprenderam durante gerações a interpretar plantas não apenas como fontes de alimento ou material, mas como sinais da própria paisagem.
 
-A [[Raiz de Brasa]] recém-extraída continua produzindo calor por algum tempo e pode ser empregada emergencialmente como uma fonte térmica portátil.
+A [[Árvore de Thyr]] é um dos exemplos mais conhecidos.
 
-Nenhuma espécie foi estabelecida até o momento como principal fonte de combustível de Farlands.
+A direção de seus galhos revela ventos predominantes.
 
-### Ritos e crenças
+O formato de seu crescimento fornece indícios sobre exposição e estabilidade do terreno.
 
-Nenhum rito religioso diretamente associado às espécies catalogadas foi estabelecido.
+Sua sobrevivência indica a existência de água subterrânea.
 
-A relação dos Arhto-Keim com determinadas plantas parece, até agora, possuir caráter principalmente prático.
+Para alguém treinado em sua leitura, uma antiga Thyr funciona quase como um **mapa vivo**.
 
-A [[Árvore de Thyr]] é particularmente importante.
+O mesmo princípio se aplica a outras espécies.
 
-Sua inclinação indica os ventos predominantes, suas raízes revelam características do terreno e sua presença denuncia a existência de água subterrânea.
+Uma concentração de [[Raiz de Brasa|Raízes de Brasa]] revela pequenos bolsões subterrâneos onde a temperatura permanece ligeiramente mais elevada.
 
-Para alguém treinado em sua leitura, uma Thyr funciona quase como um **mapa vivo da região**.
+Campos de [[Dedo-do-Gelo]] indicam atividade vegetal sob camadas aparentemente estéreis de neve.
+
+Grandes colônias de [[Musgo-Pulmão]] podem denunciar a presença de matéria orgânica enterrada.
+
+A vegetação, para quem sabe observá-la, transforma a paisagem silenciosa de Farlands em uma sucessão de sinais.
+
+## Relação com os animais
+
+A flora de Farlands não existe separada da fauna.
+
+Muitas espécies criam pequenos ecossistemas ao seu redor.
+
+A [[Raiz de Brasa]] aquece ligeiramente o terreno que envolve sua estrutura subterrânea. Esse calor permite a sobrevivência de pequenos animais, fungos e outros organismos incapazes de suportar as mesmas temperaturas no solo ao redor.
+
+O [[Musgo-Pulmão]] absorve nutrientes provenientes de cadáveres e outros restos orgânicos.
+
+A [[Coroa de Sangue]] forma cavidades protegidas do vento onde pequenos organismos procuram abrigo.
+
+A [[Mandíbula Branca]] levou essa relação ainda mais longe e desenvolveu um mecanismo próprio de captura de pequenos animais.
+
+Nas Terras do Gelo Profundo, uma única planta pode sustentar ao redor de si uma pequena comunidade de organismos.
 
 ## Perigos
 
 Nem toda vegetação de Farlands é inofensiva.
 
-O [[Musgo-Pulmão]] normalmente utiliza matéria orgânica morta, mas seus filamentos podem crescer em direção a sangue ou tecidos expostos caso uma criatura ferida permaneça imóvel sobre uma grande colônia durante tempo suficiente.
+O [[Musgo-Pulmão]] normalmente utiliza matéria morta, mas seus filamentos podem crescer em direção a sangue e tecidos expostos quando encontram uma criatura ferida e imóvel.
 
-A [[Raiz de Brasa]] contém compostos irritantes quando crua e precisa ser preparada antes do consumo.
+A [[Raiz de Brasa]] provoca forte irritação quando ingerida sem preparação adequada.
 
-A [[Mandíbula Branca]] é uma planta carnívora capaz de prender pequenos animais através do fechamento lento de suas folhas.
+A [[Mandíbula Branca]] é capaz de capturar pequenos animais através do fechamento lento de suas folhas e seus fluidos digestivos podem irritar tecidos expostos.
 
-Outras espécies apresentam aparência ou comportamento capazes de confundir viajantes pouco familiarizados com o ambiente.
+Mesmo espécies sem comportamento predatório podem representar perigo.
 
-A ausência de movimento também não deve ser interpretada como ausência de atividade: várias plantas de Farlands apresentam metabolismo extremamente lento e podem reagir ao ambiente ao longo de minutos, horas ou mesmo dias.
+Hastes rígidas do [[Dedo-do-Gelo]] podem permanecer escondidas sob neve recente.
 
-## Relação com os animais
+Colônias vegetais podem ocultar fendas.
 
-A flora do norte não existe isoladamente.
+Estruturas aparentemente imóveis podem responder à presença de um organismo somente depois de vários minutos.
 
-Diversas espécies formam pequenos ecossistemas próprios.
+Em Farlands, **lentidão não significa inatividade**.
 
-A [[Raiz de Brasa]], por exemplo, aquece ligeiramente o terreno ao redor de sua estrutura subterrânea.
+## O norte profundo
 
-Esse calor permite a sobrevivência de pequenos animais, fungos e outros organismos que não suportariam as mesmas temperaturas no solo ao redor.
+Existe um ponto nas Terras do Gelo Profundo em que as categorias utilizadas pelos naturalistas começam a perder precisão.
 
-O [[Musgo-Pulmão]], por sua vez, utiliza cadáveres e outros restos orgânicos como fonte adicional de nutrientes.
+Organismos continuam utilizando luz.
 
-A [[Coroa de Sangue]] cria cavidades relativamente protegidas e aquecidas que atraem pequenos organismos.
+Continuam crescendo.
 
-Assim, em algumas áreas do Gelo Profundo, uma única planta pode funcionar como o centro de uma pequena comunidade biológica.
+Continuam reproduzindo-se e respondendo ao ambiente.
 
-## Estudo e registros
+Ainda assim, suas formas já pouco lembram árvores, ervas ou musgos.
 
-Grande parte do conhecimento prático sobre a flora de Farlands pertence aos [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]].
+Alguns passam quase toda a existência enterrados.
 
-Esse conhecimento foi construído através de gerações de observação e sobrevivência e nem sempre utiliza as mesmas categorias empregadas pelos estudiosos estrangeiros.
+Outros formam estruturas móveis.
 
-Exploradores e estudiosos vindos de outras regiões começaram a registrar e classificar essas espécies segundo sistemas próprios.
+Outros utilizam animais como fonte regular de nutrientes.
 
-A instituição responsável pelos principais estudos formais de botânica de Farlands ainda não foi estabelecida.
+E existem regiões ainda mais ao norte onde a flora permanece pouco observada.
 
-A participação das academias de [[Quetz-Longbridge]] nas expedições botânicas também permanece por definir.
+Não se sabe onde termina essa transformação.
 
-## Questões ainda em aberto
+Os viajantes que retornam dessas terras costumam concordar apenas em uma coisa:
 
-> [!aviso] A desenvolver
-> - Qual instituição de Isteros conduz formalmente os estudos sobre a flora de Farlands?
-> - As academias de [[Quetz-Longbridge]] enviaram botânicos nas grandes expedições ao norte?
-> - Existe flora verdadeiramente independente dentro das cavernas, sem acesso direto à luz solar?
-> - Os Arhto-Keim cultivam alguma espécie ou dependem exclusivamente da coleta de plantas selvagens?
-> - O que a guarnição e os presos de [[Fortaleza e Prisão de Helland|Helland]] comem regularmente?
-> - Existe agricultura protegida ou subterrânea em Helland?
-> - Colonos de Isteros tentaram introduzir espécies estrangeiras em Farlands?
-> - Até onde a flora continua existindo no extremo norte?
-> - Existe um ponto em que os organismos encontrados deixam de poder ser classificados satisfatoriamente como plantas?
+**as últimas árvores não marcam o fim da vegetação de Farlands.**
+
+Marcam o começo de algo diferente.
+
+Veja também: [[Farlands]] · [[Os Arhto-Keim (Povo do Frio)|Arhto-Keim]]
